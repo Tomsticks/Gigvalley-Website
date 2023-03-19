@@ -6,5 +6,4 @@ import HomePage from '@/Pages/LandingPage.vue'
         {path:'/', name:'Home', component:HomePage}
        
     ]
-
 })
