@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="" class="main">
+    <div id="" class="main ">
       <nav id="nav">
         <div class="nav-img">
           <img src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
