@@ -1,0 +1,31 @@
+
+
+:root{
+    --primary-color:#70008f;
+    --secondary-color:#ffffff;
+}
+::-webkit-scrollbar {
+    width: 9px;
+    transition: 1s ease-in-out;
+  }
+  
+
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 50px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #48015c5d;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #7d009c;
+    border-radius: 50px;
+    padding: 20px;
+    position: absolute;
+    margin: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #70008f;
+  }
