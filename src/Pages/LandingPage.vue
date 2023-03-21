@@ -748,6 +748,9 @@
 </template>
 
 <style scoped>
+:root{
+  --primary-color:#70008f
+}
 .main {
   padding: 0 2em;
   display: flex;
