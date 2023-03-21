@@ -164,7 +164,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt="Customer Testimony for gigvalley data plan"
                   />
                   <h3>James Ngozie</h3>
@@ -184,7 +184,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt="Gigvalley data plan customer's view"
                   />
                   <h3>Mary Famuagun</h3>
@@ -204,7 +204,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt="customer's product's testimonials"
                   />
                   <h3>John Moh</h3>
@@ -224,7 +224,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -244,7 +244,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -264,7 +264,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -284,7 +284,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -304,7 +304,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -324,7 +324,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -344,7 +344,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -364,7 +364,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -384,7 +384,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -404,7 +404,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -424,7 +424,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -444,7 +444,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -464,7 +464,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="@/assets/images/CUSTOMER 1.jfif"
+                    src="@/assets/images/agent.png"
                     alt="developer's Testimony"
                   />
                   <h3>Miracle Olaniyan</h3>
@@ -484,7 +484,7 @@
               </div>
               <div class="customer-1">
                 <div class="custormers-head">
-                  <img src="@/assets/images/CUSTOMER 1.jfif" alt="" />
+                  <img src="@/assets/images/agent.png" alt="" />
                   <h3>Tope Osunrayi</h3>
                   <div class="stars">
                     <i class="fa-solid fa-star"></i>
