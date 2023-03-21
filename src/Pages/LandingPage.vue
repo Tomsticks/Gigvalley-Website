@@ -3,7 +3,7 @@
     <div id="" class="main">
       <nav id="nav">
         <div class="nav-img">
-          <img src="../Images/Nav-Logo.png" alt="GigValley Logo" />
+          <img src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
         </div>
         <a href="#test">Home</a>
         <a href="#about-us">About Us</a>
@@ -38,7 +38,7 @@
 
         <div class="worked-pics">
           <img
-            src="../Images/GIG-VALLEY PICS WORK.jpg"
+            src="@/assets/images/heroImg.jpg"
             alt="data plan images logo"
             class="photoshop-edit"
           />
@@ -57,7 +57,7 @@
         <div class="aboutMain-con">
           <div class="abt-con">
             <img
-              src="../Images/shield-removebg-preview.png"
+              src="@/assets/images/shield-removebg-preview.png"
               alt="trusted logo picture"
             />
             <h2>Trustworthy</h2>
@@ -69,7 +69,7 @@
           </div>
           <div class="abt-con">
             <img
-              src="../Images/clock-removebg-preview.png"
+              src="@/assets/images/clock-removebg-preview.png"
               alt="data Availability image"
             />
             <h2>24/7 Availability</h2>
@@ -81,7 +81,7 @@
           </div>
           <div class="abt-con">
             <img
-              src="../Images/agent-removebg-preview.png"
+              src="@/assets/images/agent-removebg-preview.png"
               alt="custormer service provider image"
             />
             <h2>Customer Support</h2>
@@ -164,7 +164,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt="Customer Testimony for gigvalley data plan"
                   />
                   <h3>James Ngozie</h3>
@@ -184,7 +184,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt="Gigvalley data plan customer's view"
                   />
                   <h3>Mary Famuagun</h3>
@@ -204,7 +204,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt="customer's product's testimonials"
                   />
                   <h3>John Moh</h3>
@@ -224,7 +224,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -244,7 +244,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -264,7 +264,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -284,7 +284,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -304,7 +304,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -324,7 +324,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -344,7 +344,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -364,7 +364,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -384,7 +384,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -404,7 +404,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -424,7 +424,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -444,7 +444,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt=" Nurse Kate Tv CEO Testimonial"
                   />
                   <h3>Nurse Kate</h3>
@@ -464,7 +464,7 @@
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
-                    src="../Images/CUSTOMER 1.jfif"
+                    src="@/assets/images/CUSTOMER 1.jfif"
                     alt="developer's Testimony"
                   />
                   <h3>Miracle Olaniyan</h3>
@@ -484,7 +484,7 @@
               </div>
               <div class="customer-1">
                 <div class="custormers-head">
-                  <img src="../Images/CUSTOMER 1.jfif" alt="" />
+                  <img src="@/assets/images/CUSTOMER 1.jfif" alt="" />
                   <h3>Tope Osunrayi</h3>
                   <div class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -508,7 +508,7 @@
       <section id="FAQ">
         <div class="faqImg">
           <img
-            src="../Images/Gigvalley (17).png"
+            src="@/assets/images/FaqImg.png"
             alt=" frequently asked questions in data plans"
           />
         </div>
@@ -605,12 +605,12 @@
                         tempore eveniet soluta cumque eum, veniam necessitatibus! Explicabo modi consectetur alias iure dolore.</p>
                 </p>
                 <div class="app-store">
-                    <img src="../Images/google_play_store-removebg-preview.png" alt="Play Store">
-                    <img src="../Images/apple_store_img_3-removebg-preview.png" alt="App Store">
+                    <img src="@/assets/images/google_play_store-removebg-preview.png" alt="Play Store">
+                    <img src="@/assets/images/apple_store_img_3-removebg-preview.png" alt="App Store">
                 </div>
             </div>
             <div class="app-img">
-            <img src="../Images/Gig Valley Mockup 3.png" alt="data reselling app logo">
+            <img src="@/assets/images/Gig Valley Mockup 3.png" alt="data reselling app logo">
         </div>
     </div>
            </section>
@@ -618,7 +618,7 @@
          
     <footer>
         <div class="footer-img">
-            <img src="../Images/footer img.png" alt="">
+            <img src="@/assets/images/footer img.png" alt="">
         </div>
         <div class="footer-txt">
             <div class="foot-txt">
@@ -651,102 +651,99 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                         </acronym>
             </a> -->
-
-        </div>
-      <footer>
-        <footer id="footer" class="footer">
-          <div class="container">
-            <div class="row gy-4">
-              <div class="col-lg-5 col-md-12 footer-info">
-                <a href="index.html" class="logo d-flex align-items-center">
-                  <span>GIGVALLEY</span>
+    </div>
+    <footer>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span>GIGVALLEY</span>
+              </a>
+              <p>Do you want to get notified for information or web Services</p>
+              <button class="subscription">Subscribe</button>
+              <p><strong>Our Social-links</strong></p>
+              <div class="social-links d-flex mt-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083464581234"
+                >
+                  <acronym title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                  </acronym>
                 </a>
-                <p>
-                  Do you want to get notified for information or web Services
-                </p>
-                <button class="subscription">Subscribe</button>
-                <p><strong>Our Social-links</strong></p>
-                <div class="social-links d-flex mt-4">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100083464581234"
-                  >
-                    <acronym title="Facebook">
-                      <i class="fa-brands fa-facebook"></i>
-                    </acronym>
-                  </a>
-                  <a
-                    href="https://twitter.com/oriola_ibitayo?t=aSRH-RKC3Cm8A-EHqNoemA&s=09"
-                  >
-                    <acronym title="Twitter">
-                      <i class="fa-brands fa-twitter"></i>
-                    </acronym>
-                  </a>
-                  <a
-                    href="
+                <a
+                  href="https://twitter.com/oriola_ibitayo?t=aSRH-RKC3Cm8A-EHqNoemA&s=09"
+                >
+                  <acronym title="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </acronym>
+                </a>
+                <a
+                  href="
                     https://www.instagram.com/p/ClyBy2rNVij/?utm_source=ig_web_copy_link"
-                  >
-                    <acronym title="Instagram">
-                      <i class="fa-brands fa-instagram"></i>
-                    </acronym>
-                  </a>
-                  <a href="https://www.linkedin.com/company/gigvalley-tech/">
-                    <acronym title="Linkedin-in">
-                      <i class="fa-brands fa-linkedin-in"></i>
-                    </acronym>
-                  </a>
-                </div>
+                >
+                  <acronym title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </acronym>
+                </a>
+                <a href="https://www.linkedin.com/company/gigvalley-tech/">
+                  <acronym title="Linkedin-in">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </acronym>
+                </a>
               </div>
+            </div>
 
-              <div class="col-lg-2 col-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Market place</a></li>
-                  <li><a href="#">Terms of service</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                </ul>
-              </div>
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Market place</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
 
-              <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                  <li><a href="#">Data Gifting</a></li>
-                  <li><a href="#">SME Data</a></li>
-                  <li><a href="#">Airtime</a></li>
-                  <li><a href="#">Cable Subscription</a></li>
-                  <li><a href="#">Broadband Data</a></li>
-                </ul>
-              </div>
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Data Gifting</a></li>
+                <li><a href="#">SME Data</a></li>
+                <li><a href="#">Airtime</a></li>
+                <li><a href="#">Cable Subscription</a></li>
+                <li><a href="#">Broadband Data</a></li>
+              </ul>
+            </div>
 
-              <div class="col-lg-3 col-md-12 footer-contact text-md-start">
-                <h4>Contact Us</h4>
-                <p>
-                  68B Christore Hub,<br />
-                  Ado-Ekiti, 360102, Nigeria.<br />
+            <div class="col-lg-3 col-md-12 footer-contact text-md-start">
+              <h4>Contact Us</h4>
+              <p>
+                68B Christore Hub,<br />
+                Ado-Ekiti, 360102, Nigeria.<br />
 
-                  <strong>Phone:</strong>+234(0) 813-5595-313 <br />
-                  <strong>Email:</strong>gigvalleytech@gmail.com<br />
-                </p>
-              </div>
+                <strong>Phone:</strong>+234(0) 813-5595-313 <br />
+                <strong>Email:</strong>gigvalleytech@gmail.com<br />
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="container mt-4">
-            <div class="copyright">
-              &copy; Copyright <strong><span>GIGVALLEY</span></strong
-              >. All Rights Reserved
-            </div>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-              Designed by <a href="#">GIGVALLEY TECH</a>
-            </div>
+        <div class="container mt-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>GIGVALLEY</span></strong
+            >. All Rights Reserved
           </div>
-        </footer>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+            Designed by <a href="#">GIGVALLEY TECH</a>
+          </div>
+        </div>
       </footer>
+    </footer>
   </div>
 </template>
 
@@ -951,7 +948,7 @@ nav button {
   display: flex;
   padding: 2em 1em;
   background-color: #fcf0ffb0;
-  background-image: url(../Images/Nav-Logo.png);
+  background-image: url(@/assets/images/Nav-Logo.png);
   background-repeat: no-repeat;
   background-blend-mode: lighten;
   background-size: contain;
