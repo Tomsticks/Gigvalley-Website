@@ -103,4 +103,36 @@
   text-align: center;
   margin-top: 1em;
 }
+@media (max-width: 849px) {
+.aboutMain-con {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .abt-con {
+    width: auto;
+  }
+
+  #about-us {
+    margin-top: 0.2em;
+    padding-bottom: 7em;
+  }
+}
+@media (max-width: 720px) {
+#about-us {
+    margin-top: 0;
+    padding-bottom: 5em;
+  }
+}
+@media (max-width: 608px) {
+  #about-us {
+      margin-top: 0;
+    }
+  }
+
+@media (max-width: 395px) {
+  .aboutMain-con {
+    padding: 2em 8px;
+  }
+}
 </style>

@@ -1,4 +1,20 @@
+<script setup>
+import top from '@/components/Header.vue'
+import Hero from '@/components/Hero.vue';
+import AboutUs from '@/components/AboutUs.vue';
+import Testimonial from '@/components/Testimonial.vue';
+import Services from '@/components/Services.vue';
+</script>
 <template>
+
+   <div>
+    <top/>
+    <Hero/>
+    <Testimonial/>
+    <AboutUs/>
+    <Services/>
+   </div>
+
   <div>
     <div id="" class="main ">
      
@@ -514,7 +530,7 @@
               <p>Do you want to get notified for information or web Services</p>
               <button class="subscription">Subscribe</button>
               <p><strong>Our Social-links</strong></p>
-              <div class="social-links d-flex mt-4">
+              <div class="mt-4 social-links d-flex">
                 <a
                   href="https://www.facebook.com/profile.php?id=100083464581234"
                 >
@@ -1390,7 +1406,7 @@ let animateP = document.querySelectorAll('.ptag-move')
   .hero-btn button {
     margin-top: 1.5em;
   }
-  #about-us {
+#about-us {
     margin-top: 0;
   }
   .hero-btn {

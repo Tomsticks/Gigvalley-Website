@@ -94,4 +94,71 @@
   color: var(--primary-color);
 }
 
+@media (max-width: 608px) {
+  .hero-btn button {
+    margin-top: 1.5em;
+  }
+.hero-btn {
+    margin-top: 0;
+  }
+}
+@media (max-width: 520px) {
+  #Hero {
+    display: block;
+  }
+  .hero-txt1 {
+    width: 100%;
+  }
+  .worked-pics {
+    width: 100%;
+  }
+.hero-btn {
+    margin: 1em;
+  }
+  .hero-btn button {
+    font-size: clamp(15px, 1vw, 10px);
+  }
+ .hero-txt1 h1 {
+    font-weight: bolder;
+    font-weight: 900;
+    font-family: "inter";
+    font-size: clamp(0.9em, 9vw, 30em);
+  }
+  .hero-lorem {
+    font-size: clamp(0.6em, 3vw, 8em);
+    /* color: red; */
+  }
+}
+@media (max-width: 494px) {
+.hero-btn button {
+    margin-top: 0.5em;
+  }
+}
+@media (max-width: 437px) {
+  .hero-btn button {
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 395px) {
+.worked-pics {
+    padding: 3px;
+  }
+  .photoshop-edit {
+    height: 100%;
+  }
+  .hero-btn {
+    display: flex;
+    gap: 0.3em;
+  }
+  .hero-btn button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 344px) {
+  .hero-btn button {
+    width: 50%;
+    padding: 5px;
+  }
+}
 </style>

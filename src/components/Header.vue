@@ -7,8 +7,8 @@
         <a href="#about-us">About Us</a>
         <a href="#services">Service</a>
         <div class="market">
-          <a href="#">Market Place<i class="fa-solid fa-chevron-down"></i></a>
-          <div class="div">
+          <a href="#" class=" ">Market Place<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="div hidden">
             <a href="">Buy Data</a>
             <a href="">Buy Airtime</a>
             <a href="">Cable Subscription</a>
@@ -50,5 +50,16 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 849px) {
+  nav button {
+    padding: 0.7em 5em;
+    width: 15%;
+  }
+}
+@media (max-width: 720px) {
+  nav {
+    display: none;
+  }
 }
 </style>

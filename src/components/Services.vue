@@ -136,4 +136,40 @@
 .sub1 {
   margin-top: 2em;
 }
+@media (max-width: 927px) {
+  .ser-con {
+    flex-direction: column;
+    text-align: left;
+  }
+  .ser-con p {
+    font-weight: 300;
+  }
+  .sevices-main {
+    width: 100%;
+  }
+  .ser-txt {
+    width: 100%;
+  }
+  .sub1 {
+    margin-top: 0em;
+  }
+}
+@media (max-width: 494px) {
+  .lorem-text {
+    font-size: (0.6em, 1.5vw, 8em);
+    margin-top: 3px;
+  }
+.sub-main {
+    padding: 1.5em;
+  }
+}
+@media (max-width: 437px) {
+.sevices-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    place-items: center;
+  }
+}
 </style>
