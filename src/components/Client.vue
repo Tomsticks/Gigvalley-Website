@@ -348,3 +348,96 @@
         </div>
       </section>
 </template>
+
+<style scoped>
+.curstomers {
+  display: flex;
+  justify-content: center;
+}
+#client {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.col-lg-3 {
+  text-align: left;
+}
+.customer-comment_con::-webkit-scrollbar {
+  width: 12px;
+  background-color: white;
+  display: none;
+}
+
+.customer-comment_con::-webkit-scrollbar-track {
+  background-color: white;
+  display: none;
+}
+
+.customer-comment_con::-webkit-scrollbar-thumb {
+  background: none;
+  border-radius: 50px;
+  position: absolute;
+  display: none;
+}
+
+.customer-comment_con::-webkit-scrollbar-thumb:hover {
+  display: none;
+  background: none;
+}
+.customer-comment_con {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow: scroll;
+  /* padding: 10vh; */
+}
+.customer-1 {
+  height: 40vh;
+  min-width: 50vh;
+  border-radius: 20px;
+  box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
+  -webkit-box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
+  -moz-box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
+  padding: 20px;
+}
+.customer-1 img {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+.custormers-head {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  grid-template-columns: 30% 70%;
+}
+
+/* .customer-1 p{
+} */
+
+.stars {
+  position: absolute;
+  top: 5em;
+  padding-left: 100px;
+}
+
+.custormers-head h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#client h1 {
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#client h1 span {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+</style>
