@@ -1,11 +1,5 @@
-<script setup>
-import top from '@/components/Header.vue'
-import Hero from '@/components/Hero.vue';
-import AboutUs from '@/components/AboutUs.vue';
-import Testimonial from '@/components/Testimonial.vue';
-import Services from '@/components/Services.vue';
-</script>
 <template>
+<<<<<<< HEAD
 
    <div>
     <top/>
@@ -612,6 +606,19 @@ import Services from '@/components/Services.vue';
       </footer>
     </footer>
   </div>
+=======
+ <main class="px-8 flex flex-col">
+  <Nav/>
+  <Hero/>
+<Testimoies/>
+<About/>
+<Services/>
+<Custormers/>
+<Faq/>
+<Footer/>
+
+ </main>
+>>>>>>> 19f33578fa015133b7350d115fc651e28fe8f029
 </template>
 
 <script setup>
@@ -811,7 +818,7 @@ let animateP = document.querySelectorAll('.ptag-move')
   .hero-btn button {
     margin-top: 1.5em;
   }
-#about-us {
+  #about-us {
     margin-top: 0;
   }
   .hero-btn {
