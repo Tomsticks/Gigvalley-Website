@@ -18,6 +18,9 @@
         <button class="buy-data">Signin</button>
       </nav>
 </template>
+<script setup>
+
+</script>
 <style scoped>
 nav {
   display: flex;
