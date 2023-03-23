@@ -51,6 +51,7 @@ nav button {
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 @media (max-width: 849px) {
   nav button {
     padding: 0.7em 5em;
@@ -61,5 +62,57 @@ nav button {
   nav {
     display: none;
   }
+=======
+
+nav .market a:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .market {
+  position: relative;
+}
+
+.edit-me {
+  height: 50mm;
+}
+
+.div {
+  width: 15em;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  background-color: var(--primary-color);
+  gap: 10px;
+  box-shadow: 3px 3px 10px 0 black;
+  padding: 10px;
+  transition: 2s ease-in-out;
+}
+.div a {
+  color: var(--secondary-color);
+  width: 100%;
+  height: 2em;
+}
+
+.div a:hover {
+  background-color: rgba(255, 255, 255, 0.397);
+  color: var(--secondary-color);
+  width: 100%;
+  align-items: center;
+}
+.market a:hover + .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.div:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+>>>>>>> 19f33578fa015133b7350d115fc651e28fe8f029
 }
 </style>
