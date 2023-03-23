@@ -105,4 +105,10 @@ nav .market {
   justify-content: center;
   align-items: center;
 }
+
+@media(max-width:720px){
+  nav{
+ position: absolute;
+  }
+}
 </style>
