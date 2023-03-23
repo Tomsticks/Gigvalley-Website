@@ -105,4 +105,18 @@ nav .market {
   justify-content: center;
   align-items: center;
 }
+
+@media(max-width:720px){
+  nav{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ background-color: red;
+ height: 100vh;
+ width: 200px;
+  }
+  nav .nav-img img {
+    display: none;
+  }
+}
 </style>

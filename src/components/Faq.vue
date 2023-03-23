@@ -11,12 +11,12 @@
         <div class="Faq">
           <h2>FAQ</h2>
           <div class="question-zone">
-            <div v-for="items in data" :key="id" class="accordion" @click="items.open = item">
+            <div v-for="items in data" :key="items" class="accordion" @click="items.open = !items.open">
               <div   class="accordion__question">
                 <p >{{ items.que }}<i class="fa-solid fa-plus"></i></p>
               </div>
               <div class="accordion__answer">
-                <p v-show="items.open" class="ptag-move"> {{ items.ans}}</p>
+                <p v-show="open" class="ptag-move"> {{ items.ans}}</p>
               </div>
             </div>
           </div>
@@ -25,6 +25,9 @@
 </template>
 
 <script setup>
+import {ref} from 'vue'
+
+let open = ref(false)
 const data = [
   {
 que:"How Do I check my Data Balance?",
