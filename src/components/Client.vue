@@ -65,246 +65,7 @@
                   VTU problems ".
                 </p>
               </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt=" Nurse Kate Tv CEO Testimonial"
-                  />
-                  <h3>Nurse Kate</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "5 stars gigvalley has become our go-to exhibition partner,
-                  they save me hassle and stress".
-                </p>
-              </div>
+         
               <div class="customer-1">
                 <div class="custormers-head">
                   <img
@@ -357,9 +118,35 @@
 #client {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   align-items: center;
   margin: 0 auto;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-150%);
+  }
+  75% {
+    transform: translateX(-160%);
+  }
+  80% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .col-lg-3 {
@@ -419,10 +206,11 @@
 /* .customer-1 p{
 } */
 
-.stars {
+div.stars {
   position: absolute;
   top: 5em;
   padding-left: 100px;
+  display: none;
 }
 
 .custormers-head h3 {
@@ -440,4 +228,42 @@
   border-bottom: 3px solid var(--primary-color);
 }
 
+.move-container {
+  width: 100%;
+  overflow: scroll;
+  border-radius: 5px;
+}
+
+.move-container::-webkit-scrollbar-button {
+  color: transparent;
+  background-color: transparent;
+  width: 1px;
+  display: none;
+}
+.move-container::-webkit-scrollbar-track {
+  color: transparent;
+  background-color: transparent;
+  width: 1px;
+  display: none;
+}
+.move-container::-webkit-scrollbar-thumb {
+  color: transparent;
+  background-color: transparent;
+  width: 1px;
+  display: none;
+}
+.move-container::-webkit-scrollbar-track-piece {
+  color: transparent;
+  background-color: transparent;
+  width: 1px;
+  display: none;
+}
+
+.move-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  animation: slide 20s infinite linear alternate;
+  padding: 10px;
+}
 </style>
