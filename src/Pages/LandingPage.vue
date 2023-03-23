@@ -23,50 +23,7 @@ import Custormers from '../components/Client.vue'
 import Faq from '../components/Faq.vue'
 import Footer from '../components/Footer.vue'
 </script>
-<style scoped>
-:root{
-  --primary-color:#70008f
-}
 
-
-
-
-
-
-
-
-
-
-details {
-  direction: rtl;
-  text-align: left;
-  display: flex;
-}
-
-details a {
-  margin-bottom: 10px;
-}
-
-
-
-
-
-
-/* NAV FIXED */
-
-.fixed {
-  background-color: white;
-  width: 100%;
-  position: fixed;
-  inset: 0;
-  margin-top: 0;
-  transition: 0.5s;
-  z-index: 5;
-}
-
-
-
-</style>
 
 <!-- <script setup>
  const nav = document.querySelector('nav');
