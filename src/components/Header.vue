@@ -51,18 +51,6 @@ nav button {
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
-@media (max-width: 849px) {
-  nav button {
-    padding: 0.7em 5em;
-    width: 15%;
-  }
-}
-@media (max-width: 720px) {
-  nav {
-    display: none;
-  }
-=======
 
 nav .market a:first-child {
   display: flex;
@@ -113,6 +101,5 @@ nav .market {
   flex-direction: column;
   justify-content: center;
   align-items: center;
->>>>>>> 19f33578fa015133b7350d115fc651e28fe8f029
 }
 </style>

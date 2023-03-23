@@ -98,20 +98,22 @@
 <style scoped>
 @import '../assets/main.css';
 .subscription {
-  color: var(--primary-color);
-  background-color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
   padding: 5px 10px;
   font-size: clamp(12px, 2.5vh, 20px);
   border-radius: 10px;
   border: none;
   margin: 20px 0;
   transition: 0.5s ease-in-out;
+  border: .5px solid #ffffff7c;
 }
-.subscription:hover {
-  margin-left: 20px;
-  transform: scale(1.7);
-  box-shadow: 2px 2px 2px 2px #c108f5;
+.subscription:hover{
+  background-color: #FFF;
+  color: var(--primary-color);
 }
+
+
 .footer {
   font-size: 14px;
   background-color:var(--primary-color);
@@ -234,4 +236,22 @@
 .footer .credits a {
   color: #fff;
 }
+@media (max-width:858px) {
+    .row{
+        padding: 10px 20px;
+        /* grid-template-columns: repeat(auto-fit,minmax(200px ,1fr)); */
+    }
+  }
+  @media (max-width:726px) {
+    .row{
+        padding: 10px 10px;
+        grid-template-columns: repeat(auto-fit,minmax(300px ,1fr));
+    }
+  }
+  @media (max-width:642px) {
+    .row{
+        padding: 10px 10px;
+        grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+    }
+  }
 </style>
