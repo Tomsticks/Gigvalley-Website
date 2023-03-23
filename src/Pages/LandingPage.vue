@@ -6,7 +6,6 @@ import Testimonial from '@/components/Testimonial.vue';
 import Services from '@/components/Services.vue';
 </script>
 <template>
-<<<<<<< HEAD
 
    <div>
     <top/>
@@ -613,19 +612,6 @@ import Services from '@/components/Services.vue';
       </footer>
     </footer>
   </div>
-=======
- <main class="px-8 flex flex-col">
-  <Nav/>
-  <Hero/>
-<Testimoies/>
-<About/>
-<Services/>
-<Custormers/>
-<Faq/>
-<Footer/>
-
- </main>
->>>>>>> 19f33578fa015133b7350d115fc651e28fe8f029
 </template>
 
 <script setup>
