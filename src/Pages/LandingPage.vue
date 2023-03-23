@@ -7,9 +7,10 @@
 <Services/>
 <Custormers/>
 <Faq/>
-<Footer/>
+
 
  </main>
+ <Footer/>
 </template>
 
 <script setup>

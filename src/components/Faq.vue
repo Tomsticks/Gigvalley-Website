@@ -11,7 +11,7 @@
         <div class="Faq">
           <h2>FAQ</h2>
           <div class="question-zone">
-            <div v-for="items in data" :key="id" class="accordion" @click="items.open = !tem">
+            <div v-for="items in data" :key="id" class="accordion" @click="items.open = item">
               <div   class="accordion__question">
                 <p >{{ items.que }}<i class="fa-solid fa-plus"></i></p>
               </div>
