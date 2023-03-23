@@ -4,10 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
-}
+
+
 :root{
     --primary-color:#70008f;
     --secondary-color:#ffffff;
 }
+
+
