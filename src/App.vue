@@ -2,7 +2,6 @@
    
  <RouterView/>
 
-
 </template>
 <script setup>
 

@@ -9,8 +9,8 @@
         <div class="market">
           <a href="#" class=" ">Market Place<i class="fa-solid fa-chevron-down"></i></a>
           <div class="div hidden">
-            <a href="">Buy Data</a>
-            <a href="">Buy Airtime</a>
+            <router-link to="/BuyData">Buy Data</router-link>    
+            <router-link to="/BuyAirtime">Buy Airtime</router-link>    
             <a href="">Cable Subscription</a>
             <a href="">Electricity Bill</a>
           </div>
