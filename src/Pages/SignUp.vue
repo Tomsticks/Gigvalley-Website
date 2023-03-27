@@ -4,26 +4,31 @@
     <div class="back-ground">
         <div class="container">
         <div class="sign-in">
-            <h1>Sign in</h1>
+            <h1>Sign up</h1>
+            <p class="con">continue with</p>
             <div class="signs">
                 <p>f</p>
-                <p>G<sup>+</sup></p>
+                <p>G</p>
                 <p>in</p>
             </div>
+            <hr>
+            <p class="fill">fill in a valid details</p>
             <div class="input">
+                <input type="email" placeholder="user email">
+                <br>
+                <input type="password" placeholder="password">
+                <br>
                 <input type="email" placeholder="user email">
                 <br>
                 <input type="password" placeholder="password">
             </div>
             <div class="end"  >
-                <a href="#">Forgot your password</a><br>
-                <p>sign in</p>
+                <button class="hover:shadow-inner">sign up</button><br>
+                <a href="#">login</a>
             </div>
+            
         </div>
         <div class="sign-up">
-            <!-- <h1>Sign UP</h1>
-            <p id="up">Sign up here if you don't have an account</p>
-            <p id="up-up">sign up</p> -->
             <img src="../assets/images/sideMe.png" alt="">
         </div>
     </div>
@@ -32,33 +37,51 @@
 <style scoped>
 .container{
     display: flex;
+    flex-direction: row-reverse;
     width: 60%;
-    height: 70%;
+    height: 80%;
     align-items: center;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
-    margin: 80px auto;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: 0px 7px 40px -10px black ;
-    transition: .3s ease-in-out ;
 }
-
+.con{
+    color: #5e0377a6;
+}
 .back-ground{
     background-color: rgb(232, 235, 235);
+    display: grid;
+    place-items: center;
+    height: 100vh;
     font-family: sans-serif;
 }
 
-.sign-in{
-    /* border: 2px solid red; */
-    width: 50%;
-    text-align: center;
-    background-color: white;
-    padding: 100px 0;
-    height: 126.7mm;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
 }
 
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.sign-in{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.fill{
+    text-transform: capitalize;
+    margin: 10px;
+    color: #5e0377a6;
+}
 
 .signs{
     display: flex;
@@ -83,18 +106,8 @@
     background-color:#5e0377 ;
     color: white;
     transition: .3s ease-in-out;
-    transform: scale(1.1);
 }
 
-
-sup{
-    padding-top: 10px;
-    position: absolute;
-    bottom: 13px;
-    font-size: 9px;
-    right: 8px;
-    font-weight: bolder;
-}
 
 
 .input{
@@ -122,9 +135,7 @@ input::placeholder{
 
 .sign-in a{
     text-decoration: none;
-    color: black;
-    /* border: 2px solid red; */
-    
+    color: blue;    
 }
 .end{
     display: block;
@@ -134,104 +145,73 @@ input::placeholder{
 }
 a:hover{
     text-decoration: underline;
-    color: black;
 }
 
-.end p{
+.end button{
     display: inline-block;
     background-color:#70008f;
     color: white;
     width: 150px;
     height: 40px;
     margin-top:10px;
-    padding: 15px 10px;
     border-radius: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.end p:hover{
-    background-color:#48025c;
     transition: .3s ease-in-out;
-    transform: scale(1.1);
 }
 
-
-.end p:active{
-    background-color:#32023f;
+.end button:hover{
+    background-color:#48025c;
 }
+
 
 
 .sign-up{
     /* border: 2px solid red; */
     width: 50%;
-    text-align: center;
-    background-color:#70008f;
-    color: white;
-    height: 126.7mm;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    height: 100%;
 }
 
-
-.sign-up h1{
-    margin-bottom: 25px;
-}
-
-#up{
-    font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.7;
-}
-
-#up-up{
-    border: 1px solid white;
-    margin-top: 25px;
-    width: 150px;
-    height: 40px;
-    padding: 14px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
+.sign-up img{
+    height: 100%;
+    width: 100%;
 }
 
 
 
-#up-up:hover{
-    background-color:#400252;
-    transition: .3s ease-in-out;
-    transform: scale(1.1);
+
+
+
+
+
+
+@media (max-width:883px) {
+    .container{
+        width: 80%;
+    }
 }
-
-
-#up-up:active{
-    background-color:#32023f;
-}
-
-
-
 
 @media screen and (max-width: 600px ) {
+
+    .back-ground{
+        background-color: #fff;
+    }
     .container{
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
     .sign-in{
         width:100%;
+        height: 100%;
         border-top-right-radius: 12px ;
         height: auto;
     }
     .sign-up{
-        width:100%;
-        border-top-right-radius:0 ;
-        border-bottom-left-radius:12px ;
+        display: none;
     }
 }
 
