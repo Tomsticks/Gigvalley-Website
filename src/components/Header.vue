@@ -1,5 +1,6 @@
 <template>
-  <nav id="nav">
+  
+  <nav v-if="open" id="nav" >
         <div class="nav-img">
           <img src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
         </div>
@@ -19,9 +20,19 @@
       </nav>
 </template>
 <script setup>
+import {ref} from 'vue'
 
+let open = ref(true)
+
+function openNav(){
+open = ref(false)
+   console.log('ready');
+}
 </script>
 <style scoped>
+.class{
+background-color: red;
+}
 nav {
   display: flex;
   align-items: center;
@@ -111,12 +122,37 @@ nav .market {
  position: absolute;
  display: flex;
  flex-direction: column;
- background-color: red;
+ background-color: #70008fee;
  height: 100vh;
- width: 200px;
+ width: 400px;
+ margin-top: 0;
+ right: -400px;
+ display: none;
+ /* -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
+ 
   nav .nav-img img {
     display: none;
   }
+  nav a{
+    display: flex;
+    gap: 10px;
+  }
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-400px);
+  }
+
 }
+
+    
+  }
+ 
+
 </style>
