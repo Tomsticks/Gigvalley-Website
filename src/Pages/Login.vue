@@ -20,12 +20,12 @@
                 <button class="hover:shadow-inner">sign in</button>
             </div>
         </div>
-        <div class="sign-up">
+        <!-- <div class="sign-up"> -->
             <!-- <h1>Sign UP</h1>
             <p id="up">Sign up here if you don't have an account</p>
             <p id="up-up">sign up</p> -->
-            <img src="../assets/images/sideMe.png" alt="">
-        </div>
+            <!-- <img src="../assets/images/sideMe.png" alt="">
+        </div> -->
     </div>
     </div>
 </template>
