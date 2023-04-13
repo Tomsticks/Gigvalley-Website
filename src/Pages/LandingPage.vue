@@ -8,7 +8,6 @@
 <Custormers/>
 <Faq/>
 
-
  </main>
  <Footer/>
 </template>
