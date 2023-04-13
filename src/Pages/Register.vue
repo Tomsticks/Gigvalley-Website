@@ -3,14 +3,22 @@
 <template>
     <div class="back-ground">
         <div class="container">
-        <div class="sign-in">
-            <h1>Sign In</h1>
+        <div class="sign-up">
+            <h1>Sign Up</h1>
 
 
             <div class="input">
+                <div class="class">
+                 <label for="fullname">Full name<sup>*</sup></label>
+                 <input type="text" id="fullname" name="fullname">
+                </div>
                <div class="class">
                 <label for="email">Email<sup>*</sup></label>
                 <input type="email" id="email" name="emal">
+               </div>
+               <div class="class">
+                <label for="phone">Phone<sup>*</sup></label>
+                <input type="password" id="phone" name="phone">
                </div>
                <div class="class">
                 <label for="password">Password<sup>*</sup></label>
@@ -18,12 +26,10 @@
                </div>
             </div>
             <div class="end"  >
-                <a href="#">Forgot your password?</a><br>
-                <button class="hover:shadow-inner">sign in</button>
+                <button class="hover:shadow-inner">sign Up</button>
             </div>
             <div class="create">
-                <p>Don't have an account yet? <a href="#">Sign Up</a></p>
-                <a href="#">Activate Account</a>
+                <p>Already a member? <a href="#">Sign In</a> </p>
             </div>
         </div>
        
@@ -59,7 +65,7 @@ label{
 
 .class{
     display: flex;
-    gap: 5px;
+    gap: 3px;
     flex-direction:column;
     align-items: start;
     justify-content: center;
@@ -67,46 +73,27 @@ label{
 
 h1{
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.sign-in{
+.sign-up{
     /* border: 2px solid red; */
     width: 100%;
     text-align: center;
     background-color: white;
-    padding: 70px 50px ;
+    padding: 40px 20px ;
     height: 100%;
 
 }
 
 
-.signs{
-    display: flex;
-    justify-content: center;
-}
 
-.signs p{
-    border:1px solid #70008f;
-    margin: 20px 5px;
-    width: 40px;
-    height: 40px;
-    font-weight: bolder;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 100%;
-    position: relative;
-    cursor: pointer;
-    
-}
 
-.signs p:hover{
-    background-color:#5e0377 ;
-    color: white;
-    transition: .3s ease-in-out;
-}
+
+
+
 
 
 
@@ -126,21 +113,14 @@ input{
 }
 
 
-input::placeholder{
-    padding-left: 12px;
-    text-transform: capitalize;
-    font-size: 12px;
-}
-
-
-.sign-in a{
+.sign-up a{
     text-decoration: none;
     color: blue;    
 }
 .end{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
 }
 a:hover{
@@ -183,7 +163,7 @@ a:hover{
 
 
 
-@media screen and (max-width: 500px ) {
+@media screen and (max-width: 600px ) {
 
     .back-ground{
         background-color: #fff;
@@ -199,9 +179,6 @@ a:hover{
         height: 100%;
         border-top-right-radius: 12px ;
         height: auto;
-    }
-    .sign-up{
-        display: none;
     }
 }
 
