@@ -12,6 +12,10 @@
                  <label for="fullname">Full name<sup>*</sup></label>
                  <input type="text" id="fullname" name="fullname">
                 </div>
+                <div class="class">
+                 <label for="username">Username<sup>*</sup></label>
+                 <input type="text" id="username" name="username">
+                </div>
                <div class="class">
                 <label for="email">Email<sup>*</sup></label>
                 <input type="email" id="email" name="emal">
@@ -59,13 +63,13 @@
 
 label{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     color: var(--primary-color);
 }
 
 .class{
     display: flex;
-    gap: 3px;
+    gap: 2px;
     flex-direction:column;
     align-items: start;
     justify-content: center;
@@ -105,8 +109,8 @@ h1{
 
 input{
     display: inline-block;
-    margin-bottom: 10px;
-    height: 35px;
+    margin-bottom: 8px;
+    height: 30px;
     width: 100%;
     border: 1px solid rgb(232, 235, 235);
     outline: none;
@@ -121,7 +125,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 a:hover{
     text-decoration: underline;
