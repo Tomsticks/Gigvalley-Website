@@ -5,39 +5,42 @@
         <div class="container">
         <div class="sign-in">
             <h1>Sign In</h1>
-            <div class="signs">
-                <p>f</p>
-                <p>G</p>
-                <p>in</p>
-            </div>
+
+
             <div class="input">
-                <input type="email" placeholder="user email">
-                <br>
-                <input type="password" placeholder="password">
+               <div class="class">
+                <label for="email">Email<sup>*</sup></label>
+                <input type="email" id="email" name="emal">
+               </div>
+               <div class="class">
+                <label for="password">Password<sup>*</sup></label>
+                <input type="password" id="password" name="password">
+               </div>
             </div>
             <div class="end"  >
-                <a href="#">Forgot your password</a><br>
+                <a href="#">Forgot your password?</a><br>
                 <button class="hover:shadow-inner">sign in</button>
             </div>
+            <div class="create">
+                <p>Don't have an account yet? <a href="#">Sign Up</a></p>
+                <a href="#">Activate Account</a>
+            </div>
         </div>
-        <div class="sign-up">
-            <!-- <h1>Sign UP</h1>
-            <p id="up">Sign up here if you don't have an account</p>
-            <p id="up-up">sign up</p> -->
-            <img src="../assets/images/sideMe.png" alt="">
-        </div>
+       
     </div>
     </div>
 </template>
 <style scoped>
 .container{
     display: flex;
-    width: 60%;
-    height: 80%;
+    width:55vh;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0px 7px 40px -10px black ;
+    box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
+-webkit-box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
+-moz-box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
 }
 
 .back-ground{
@@ -48,19 +51,35 @@
     font-family: sans-serif;
 }
 
+label{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.class{
+    display: flex;
+    gap: 5px;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+}
+
 h1{
     color: var(--primary-color);
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .sign-in{
     /* border: 2px solid red; */
-    width: 50%;
+    width: 100%;
     text-align: center;
     background-color: white;
-    padding: 100px 0;
+    padding: 70px 50px ;
     height: 100%;
+
 }
 
 
@@ -101,9 +120,9 @@ input{
     display: inline-block;
     margin-bottom: 10px;
     height: 35px;
-    width: 70%;
-    background-color: rgb(232, 235, 235);
-    border: 2px solid rgb(232, 235, 235);
+    width: 100%;
+    border: 1px solid rgb(232, 235, 235);
+    outline: none;
 }
 
 
@@ -119,9 +138,9 @@ input::placeholder{
     color: blue;    
 }
 .end{
-    display: block;
-    /* border: 2px red solid; */
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 10px;
 }
 a:hover{
@@ -132,10 +151,10 @@ a:hover{
     display: inline-block;
     background-color:#70008f;
     color: white;
-    width: 150px;
+    width: 100px;
     height: 40px;
     margin-top:10px;
-    border-radius: 20px;
+    border-radius: 5px;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 14px;
@@ -147,17 +166,8 @@ a:hover{
     background-color:#48025c;
 }
 
-
-
-.sign-up{
-    /* border: 2px solid red; */
-    width: 50%;
-    height: 100%;
-}
-
-.sign-up img{
-    height: 100%;
-    width: 100%;
+.create{
+    margin-top: 30px;
 }
 
 
@@ -168,13 +178,12 @@ a:hover{
 
 
 
-@media (max-width:883px) {
-    .container{
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 600px ) {
+
+
+
+
+@media screen and (max-width: 500px ) {
 
     .back-ground{
         background-color: #fff;

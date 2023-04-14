@@ -3,98 +3,102 @@
 <template>
     <div class="back-ground">
         <div class="container">
-        <div class="sign-in">
-            <h1>Sign in</h1>
-            <div class="signs">
-                <p>f</p>
-                <p>G<sup>+</sup></p>
-                <p>in</p>
-            </div>
+        <div class="sign-up">
+            <h1>Sign Up</h1>
+
+
             <div class="input">
-                <input type="email" placeholder="user email">
-                <br>
-                <input type="password" placeholder="password">
+                <div class="class">
+                 <label for="fullname">Full name<sup>*</sup></label>
+                 <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="class">
+                 <label for="username">Username<sup>*</sup></label>
+                 <input type="text" id="username" name="username">
+                </div>
+               <div class="class">
+                <label for="email">Email<sup>*</sup></label>
+                <input type="email" id="email" name="emal">
+               </div>
+               <div class="class">
+                <label for="phone">Phone<sup>*</sup></label>
+                <input type="password" id="phone" name="phone">
+               </div>
+               <div class="class">
+                <label for="password">Password<sup>*</sup></label>
+                <input type="password" id="password" name="password">
+               </div>
             </div>
             <div class="end"  >
-                <a href="#">Forgot your password</a><br>
-                <p>sign in</p>
+                <button class="hover:shadow-inner">sign Up</button>
+            </div>
+            <div class="create">
+                <p>Already a member? <a href="#">Sign In</a> </p>
             </div>
         </div>
-        <div class="sign-up">
-            <!-- <h1>Sign UP</h1>
-            <p id="up">Sign up here if you don't have an account</p>
-            <p id="up-up">sign up</p> -->
-            <img src="../assets/images/sideMe.png" alt="">
-        </div>
+       
     </div>
     </div>
 </template>
 <style scoped>
 .container{
     display: flex;
-    width: 60%;
-    height: 70%;
+    width:55vh;
     align-items: center;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
-    margin: 80px auto;
-    border-radius: 12px;
-    box-shadow: 0px 7px 40px -10px black ;
-    transition: .3s ease-in-out ;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
+-webkit-box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
+-moz-box-shadow: -4px 6px 38px 2px rgba(0,0,0,0.14);
 }
 
 .back-ground{
     background-color: rgb(232, 235, 235);
+    display: grid;
+    place-items: center;
+    height: 100vh;
     font-family: sans-serif;
 }
 
-.sign-in{
-    /* border: 2px solid red; */
-    width: 50%;
-    text-align: center;
-    background-color: white;
-    padding: 100px 0;
-    height: 126.7mm;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+label{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-color);
 }
 
-
-.signs{
+.class{
     display: flex;
+    gap: 2px;
+    flex-direction:column;
+    align-items: start;
     justify-content: center;
 }
 
-.signs p{
-    border:1px solid #70008f;
-    margin: 20px 5px;
-    width: 40px;
-    height: 40px;
-    font-weight: bolder;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 100%;
-    position: relative;
-    cursor: pointer;
-    
+h1{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.signs p:hover{
-    background-color:#5e0377 ;
-    color: white;
-    transition: .3s ease-in-out;
-    transform: scale(1.1);
+.sign-up{
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px ;
+    height: 100%;
+
 }
 
 
-sup{
-    padding-top: 10px;
-    position: absolute;
-    bottom: 13px;
-    font-size: 9px;
-    right: 8px;
-    font-weight: bolder;
-}
+
+
+
+
+
+
 
 
 .input{
@@ -105,133 +109,80 @@ sup{
 
 input{
     display: inline-block;
-    margin-bottom: 10px;
-    height: 35px;
-    width: 70%;
-    background-color: rgb(232, 235, 235);
-    border: 2px solid rgb(232, 235, 235);
+    margin-bottom: 8px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgb(232, 235, 235);
+    outline: none;
 }
 
 
-input::placeholder{
-    padding-left: 12px;
-    text-transform: capitalize;
-    font-size: 12px;
-}
-
-
-.sign-in a{
+.sign-up a{
     text-decoration: none;
-    color: black;
-    /* border: 2px solid red; */
-    
+    color: blue;    
 }
 .end{
-    display: block;
-    /* border: 2px red solid; */
+    display: flex;
     align-items: center;
-    margin-top: 10px;
+    justify-content: center;
+    margin-top: 7px;
 }
 a:hover{
     text-decoration: underline;
-    color: black;
 }
 
-.end p{
+.end button{
     display: inline-block;
     background-color:#70008f;
     color: white;
-    width: 150px;
+    width: 100px;
     height: 40px;
     margin-top:10px;
-    padding: 15px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
+    border-radius: 5px;
+    text-transform: capitalize;
     font-weight: bold;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
+    transition: .3s ease-in-out;
 }
 
-.end p:hover{
+.end button:hover{
     background-color:#48025c;
-    transition: .3s ease-in-out;
-    transform: scale(1.1);
 }
 
-
-.end p:active{
-    background-color:#32023f;
-}
-
-
-.sign-up{
-    /* border: 2px solid red; */
-    width: 50%;
-    text-align: center;
-    background-color:#70008f;
-    color: white;
-    height: 126.7mm;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-.sign-up h1{
-    margin-bottom: 25px;
-}
-
-#up{
-    font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.7;
-}
-
-#up-up{
-    border: 1px solid white;
-    margin-top: 25px;
-    width: 150px;
-    height: 40px;
-    padding: 14px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
+.create{
+    margin-top: 30px;
 }
 
 
 
-#up-up:hover{
-    background-color:#400252;
-    transition: .3s ease-in-out;
-    transform: scale(1.1);
-}
 
 
-#up-up:active{
-    background-color:#32023f;
-}
+
+
+
+
+
 
 
 
 
 @media screen and (max-width: 600px ) {
+
+    .back-ground{
+        background-color: #fff;
+    }
     .container{
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
     .sign-in{
         width:100%;
+        height: 100%;
         border-top-right-radius: 12px ;
         height: auto;
-    }
-    .sign-up{
-        width:100%;
-        border-top-right-radius:0 ;
-        border-bottom-left-radius:12px ;
     }
 }
 
