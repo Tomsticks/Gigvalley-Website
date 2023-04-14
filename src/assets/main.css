@@ -10,4 +10,11 @@
     --secondary-color:#ffffff;
 }
 
+.link{
+    @apply text-[black] bg-[] py-[10px] flex items-center gap-[5px] rounded-[10px] border border-black
+}
+
+svg{
+    height:3vh;
+}
 

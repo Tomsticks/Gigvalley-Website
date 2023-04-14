@@ -10,8 +10,8 @@
             Cable Tv Subscription tailored for YOU.
           </p>
           <div class="hero-btn">
-            <button class="buy">Get Started</button>
-            <button class="learn">Explore</button>
+            <button @click="getStarted" class="buy">Get Started</button>
+            <button @click="forNow"  class="learn">Explore</button>
           </div>
         </div>
 
@@ -24,6 +24,20 @@
         </div>
       </section>
 </template>
+
+<script setup>
+
+import {useRouter} from 'vue-router'
+const router = useRouter()
+
+function getStarted(){
+  router.push('/register')
+}
+
+function forNow(){
+  router.push('/dashboard')
+}
+</script>
 
 <style scoped>
 #Hero {
