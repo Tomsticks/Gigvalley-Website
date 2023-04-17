@@ -1,14 +1,14 @@
 <template>
-  <header class=" itm h-[] w-[350px] overflow-y-scroll flex flex-col items-center bg-[#] text-[#] border-r border-[red] lg:hidden   ">
+  <header class=" itm h-[] w-[350px] overflow-y-scroll overflow-x-hidden flex flex-col items-center bg-[#] text-[#] border-r border-[black] lg:hidden   ">
 
     <!-- <h2 class="flex justify-between border border-b-3 items-center self-center w-[100%]"> WELCOME <svg fill="none"
         class="h-[6vh]" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
       </svg></h2> -->
-    <div class="user border bg-[#F2F3F5] mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[20px] items-center justify-center  flex ">
+    <div class="user border bg-[#F2F3F5] mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[px] items-center justify-center  flex ">
       <div class="user-img">
-        <img class="rounded-[50px] h-[7vh]" :src="userImage" alt="">
+        <img class="rounded-[50px] h-[7vh]" src="./HomeImages/avatar.png" alt="">
       </div>
       <div class="user-text">
         <h1 class="">Toluwani</h1>
@@ -90,8 +90,8 @@ const userImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIwASC
 </script>
 <style scoped>
 .active {
-  background-color:#F2F3F5;
-  color:#70008f;
+  background-color:#70008f66;
+  color:wh;
   border-radius: 10px;
   padding: 10px 20px;
 }</style>
