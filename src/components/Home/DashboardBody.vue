@@ -1,9 +1,9 @@
 <template>
     <div v-if="openAccount"
         class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center ">
-        <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px]">
+        <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px] sm:px-[20px] ">
             <span @click="closeAccountNumber" class="cursor-pointer flex justify-end">Close</span>
-            <div class="overlay_Content ">
+            <div class="overlay_Content sm:text-[13px] ">
                 <p class="text-[25px] "> Automated Bank Transfer</p>
                 <!-- MAKE A TRANSFER TO THIS UNIQUE ACCOUNT NUMBER GIVEN TO YOU AND YOUR WALLET WILL BE CREDITED IMEDIATELY-->
 
@@ -59,38 +59,38 @@
         </div>
     </section>
 
-    <section class="mt-[30px] w-[100%] items-center justify-center border border-[red]  " id="services ">
+    <section class="mt-[30px] w-[100%] items-center justify-center" id="services ">
         <h1 class="text-[40px] font-bold text-primary sm:text-[20px]">Our Avaliable Services</h1>
-        <div class="allServices border bg-[#F1F1F1] md:grid-cols-2 grid grid-cols-4 sm:grid-cols-1  gap-[20px] py-[30px] px-[20px] rounded-[5px] ">
+        <div class="allServices border bg-[#F1F1F1] md:grid-cols-2 grid grid-cols-4 sm:grid-cols-2  gap-[20px] py-[30px] px-[20px] rounded-[5px] ">
             <!-- EACH -->
-            <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col ">
+            <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/Airtime.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/Airtime.png" alt="">
                 </div>
-                <p>Airtime</p>
+                <p class="xs:text-[13px]">Airtime</p>
 
             </div>
-            <div class="Buy_Data service flex flex-col ">
+            <div class="Buy_Data service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/Data.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/Data.png" alt="">
                 </div>
-                <p>Buy Data</p>
+                <p class="xs:text-[13px]">Buy Data</p>
             </div>
 
-            <div class="Airtime_ToCash service  flex flex-col  ">
+            <div class="Airtime_ToCash service  flex flex-col md:h-[20vh]  ">
 
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/AirCash.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/AirCash.png" alt="">
                 </div>
-                <p class=" self-center ">Convert Airtime to Cash</p>
+                <p class=" xs:text-[13px] ">Convert Airtime to Cash</p>
 
             </div>
 
-            <div class="airtimeToCash service flex flex-col ">
+            <div class="airtimeToCash service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/WebDev.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
-                <p>Website Development</p>
+                <p class="xs:text-[13px]">Website Development</p>
 
             </div>
 
