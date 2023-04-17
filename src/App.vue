@@ -1,13 +1,13 @@
 <template>
     <Login/>
    
- <!-- <RouterView/> -->
+ <RouterView/>
 
 </template>
 <script setup>
-import Login from './Pages/Register.vue';
+// import Login from './Pages/Register.vue';
 
-// import {RouterView} from 'vue-router'
+import {RouterView} from 'vue-router'
 </script>
 
 <style>
