@@ -17,3 +17,5 @@ import Dashboard from '@/Pages/Dashboard.vue'
        
     ]
 })
+
+// router.afterEach(to, index, from)

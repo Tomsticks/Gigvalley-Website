@@ -77,7 +77,7 @@
                 <p>Buy Data</p>
             </div>
 
-            <div class="Airtime_ToCash service items-center flex flex-col  ">
+            <div class="Airtime_ToCash service  flex flex-col  ">
 
                 <div class="image">
                     <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/AirCash.png" alt="">

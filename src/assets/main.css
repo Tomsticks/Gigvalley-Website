@@ -11,7 +11,7 @@
 }
 
 .link{
-    @apply text-[black]  py-[10px] flex items-center gap-[5px] w-[250px]   text-[black] text-[18px] font-bold font-[Raytime]
+    @apply  py-[10px] flex items-center gap-[5px] w-[250px]   text-[black] text-[18px] font-bold font-[Raytime]
 }
 
 svg{
@@ -20,9 +20,5 @@ svg{
 .service {
     @apply border-2 flex flex-col justify-center text-center items-center py-[10px] h-[30vh] rounded-[10px] bg-[white];
 }
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 
