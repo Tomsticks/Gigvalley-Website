@@ -1,6 +1,6 @@
 <template>
     <div v-if="openAccount"
-        class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100%] flex items-center justify-center ">
+        class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center ">
         <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px]">
             <span @click="closeAccountNumber" class="cursor-pointer flex justify-end">Close</span>
             <div class="overlay_Content ">
