@@ -65,7 +65,7 @@
             <!-- EACH -->
             <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/Airtime.png" alt="">
+                    <!-- <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/Airtime.png" alt=""> -->
                 </div>
                 <p>Airtime</p>
 
