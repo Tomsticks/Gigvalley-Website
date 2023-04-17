@@ -65,14 +65,14 @@
             <!-- EACH -->
             <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col ">
                 <div class="image">
-                    <!-- <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/Airtime.png" alt=""> -->
+                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/Airtime.png" alt="">
                 </div>
                 <p>Airtime</p>
 
             </div>
             <div class="Buy_Data service flex flex-col ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/Data.png" alt="">
+                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/Data.png" alt="">
                 </div>
                 <p>Buy Data</p>
             </div>
@@ -80,7 +80,7 @@
             <div class="Airtime_ToCash service  flex flex-col  ">
 
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/AirCash.png" alt="">
+                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/AirCash.png" alt="">
                 </div>
                 <p class=" self-center ">Convert Airtime to Cash</p>
 
@@ -88,7 +88,7 @@
 
             <div class="airtimeToCash service flex flex-col ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh]" src="@/Components/Home/HomeImages/WebDev.png" alt="">
+                    <img class="w-[100%] h-[20vh]" src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
                 <p>Website Development</p>
 
