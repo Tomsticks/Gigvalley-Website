@@ -10,4 +10,16 @@
     --secondary-color:#ffffff;
 }
 
+.link{
+    @apply text-[black]  py-[10px] flex items-center gap-[5px] w-[250px]   text-[#637381] text-[22px] font-bold font-[Raytime]
+}
+
+svg{
+    height:3vh;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 

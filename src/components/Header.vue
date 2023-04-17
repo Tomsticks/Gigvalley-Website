@@ -16,11 +16,17 @@
             <a href="">Electricity Bill</a>
           </div>
         </div>
-        <button class="buy-data">Signin</button>
+        <button @click="loginPage" class="buy-data">Signin</button>
       </nav>
 </template>
 <script setup>
 import {ref} from 'vue'
+import{useRouter} from 'vue-router'
+const router = useRouter()
+
+function loginPage(){
+  router.push('/login')
+}
 
 let open = ref(true)
 
@@ -28,7 +34,9 @@ function openNav(){
 open = ref(false)
    console.log('ready');
 }
+
 </script>
+
 <style scoped>
 .class{
 background-color: red;
