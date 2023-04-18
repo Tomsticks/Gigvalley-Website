@@ -6,7 +6,7 @@
         
 <div class="submain flex flex-col w-[100%] px-[20px]">
 <div class="head border-b border-black flex justify-end h-[6vh] bg-primary text-[white] pr-[20px]   ">
- <Head class=" self-start self-center"/>
+ <Head class=" self-start  self-center"/>
 </div>
 <body class="  h-[100vh] overflow-y-scroll">
     <Body/>
