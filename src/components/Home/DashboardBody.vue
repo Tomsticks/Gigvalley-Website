@@ -1,5 +1,44 @@
-<template>
-    <div v-if="openAccount"
+<script setup>
+import { ref } from 'vue'
+import { useRouter } from 'vue-router';
+const balance = ref('3870.50')
+const router = useRouter()
+const name = ref('Tomzor!')
+const openAccount = ref(false)
+const bankName = ref('')
+const accountNumber = ref('')
+
+
+
+function MoneiPoint() {
+    openAccount.value = true
+    bankName.value = 'MoniePoint'
+    accountNumber.value = 9035783851
+}
+function Providus() {
+    openAccount.value = true
+    bankName.value = 'Providus Bank'
+    accountNumber.value = 3320783522
+}
+
+function closeAccountNumber() {
+    openAccount.value = false
+}
+
+function fund(){
+    router.push('/Fund')
+}
+
+
+
+
+
+
+
+</script> 
+
+<template >
+    <div  v-if="openAccount"
         class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center ">
         <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px] sm:px-[20px] ">
             <span @click="closeAccountNumber" class="cursor-pointer flex justify-end">Close</span>
@@ -10,14 +49,14 @@
                 <h2 class="font-bold">BANK NAME: {{ bankName }}</h2>
                 <h3 class="text-[20px] ">ACCOUNT NAME: <span class="font-bold text-primary text-[20px]">GigValley -
                         Toluwani{{ }}</span></h3>
-                <h3 class="text-[20px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px]"> {{ accountNumber
-                }}</span></h3>
+                <h3 class="text-[20px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px]"> {{ accountNumber }}</span></h3>
                 <p>CHARGES: 25 NAIRA</p>
             </div>
         </div>
 
     </div>
-    <section class="top flex justify-between w-[80%] mt-[4vh] mb-[5vh] rounded-[20px] py-[20px] px-[20px]  lg:w-[90%] sm:w-[100%] "
+
+    <section @click="check"  class="top flex justify-between w-[80%] mt-[4vh] mb-[5vh] rounded-[20px] py-[20px] px-[20px]  lg:w-[90%] sm:w-[100%] "
         id="greetings-section">
         <div class="hero-text w-[50%] sm:w-[100%]">
             <h1 class="text-[40px] text-[white] font-extrabold font-[Raleway] lg:text-[40px] sm:text-[25px] ">Welcome Back, <br> {{ name }}
@@ -45,15 +84,15 @@
 
     </section>
 
-    <section class="flex mt-[30px] mx-[20px] rounded-[10px] px-[20px] shadow-xl sm:w-[100%] ">
+    <section class="flex mt-[30px] mx[20px] rounded-[10px] px-[20px] shadow-xl sm:w-[100%] sm: ">
         <div class="account_info   flex w-[100%] justify-between item-center py-[10px] sm:py-[2px]">
-            <div class="Money sm:text-[10px]">
+            <div class="Money sm:text-[10px] ">
                 <p class="flex items-center  gap-2 ">Total Balance <i class="fa-solid fa-eye mt-[8px]"></i> </p>
                 <div class="balance">
                     <span class="text-[20px] font-bold sm:text-[10px]"> &#8358{{ balance }}</span>
                 </div>
             </div>
-            <button class="
+            <button @click="fund" class="
             py-[10px] px-[25px] text-[20px] flex rounded-[50px]  bg-primary text-white  sm:justify-center sm:px-[10px] sm:rounded-[10px] sm:text-[10px]  ">Fund
                 Wallet</button>
         </div>
@@ -138,34 +177,3 @@
 
 </style>
 
-<script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router';
-const balance = ref('3870.50')
-const router = useRouter()
-const name = ref('Tomzor!')
-const openAccount = ref(false)
-const bankName = ref('')
-const accountNumber = ref('')
-
-
-
-function MoneiPoint() {
-    openAccount.value = true
-    bankName.value = 'MoniePoint'
-    accountNumber.value = 9035783851
-}
-function Providus() {
-    openAccount.value = true
-    bankName.value = 'Providus Bank'
-    accountNumber.value = 3320783522
-}
-
-function closeAccountNumber() {
-    openAccount.value = false
-}
-
-
-
-
-</script> 

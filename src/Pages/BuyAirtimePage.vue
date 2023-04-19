@@ -19,5 +19,4 @@
 import Nav from '@/components/Home/DashNav.vue'
 import Airtime from '@/components/Home/BuyAirtime.vue'
 import Head from '@/components/Home/DashHead.vue'
-
 </script>

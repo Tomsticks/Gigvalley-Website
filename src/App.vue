@@ -1,12 +1,12 @@
 <template>
    
-    <!-- <RouterView/> -->
-    <Login/>
+    <RouterView/>
+    <!-- <Login/> -->
    </template>
    <script setup>
-   import Login from './Pages/PaymentGateWay.vue';
+   // import Login from './Pages/PaymentGateWay.vue';
    
-//    import {RouterView} from 'vue-router'
+   import {RouterView} from 'vue-router'
    </script>
    
    <style>
