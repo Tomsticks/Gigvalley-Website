@@ -11,12 +11,12 @@
         <div class="Faq">
           <h2>FAQ</h2>
           <div class="question-zone">
-            <div v-for="items in data" :key="items" class="accordion" @click="items.open = !items.open">
-              <div   class="accordion__question">
+            <div v-for="(items, index) in data" :key="index" class="accordion" >
+              <div  @click="showMe(index)" class="accordion__question">
                 <p >{{ items.que }}<i class="fa-solid fa-plus"></i></p>
               </div>
               <div class="accordion__answer">
-                <p v-show="open" class="ptag-move"> {{ items.ans}}</p>
+                <p v-if="items.open" class="ptag-move"> {{ items.ans}}</p>
               </div>
             </div>
           </div>
@@ -27,39 +27,47 @@
 <script setup>
 import {ref} from 'vue'
 
-let open = ref(false)
-const data = [
-  {
-que:"How Do I check my Data Balance?",
-ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
-open:false
-},
-  {
-que:"How Do I check my Data Balance?",
-ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
-open:false
-},
-  {
-que:"How Do I check my Data Balance?",
-ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
-open:false
-},
-  {
-que:"How Do I check my Data Balance?",
-ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
-open:false
-},
-  {
-que:"How Do I check my Data Balance?",
-ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
-open:false
-},
-
-]
+function showMe(index) {
+data.value[index].open = !data.value[index].open
+}
 
 
-let item = data.forEach(item =>{
-})
+const data = ref([
+  {
+que:"How Do I check my Data Balance?",
+ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
+open:false,
+id:1
+},
+  {
+que:"How Do I check my Data Balance?",
+ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
+open:false,
+id:2
+},
+  {
+que:"How Do I check my Data Balance?",
+ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
+open:false,
+id:3
+},
+  {
+que:"How Do I check my Data Balance?",
+ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
+open:false,
+id:4
+},
+  {
+que:"How Do I check my Data Balance?",
+ans:"You can check your data balance on MTN SME by dialing *461*4# and use *131*4# or *460*260# for MTN Gifting.",
+open:false,
+id:5
+},
+
+])
+
+
+
 </script>
 <style scoped>
 
@@ -143,6 +151,18 @@ let item = data.forEach(item =>{
 
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width:688px) {
+  .faqImg{
+    display: none;
+  }
+}
+
+@media (max-width:350px) {
+  p{
+    font-size: 12px;
   }
 }
 

@@ -11,7 +11,7 @@
 <Faq class="px-[25px]"/>
 
  </main>
- <Footer class="px-[20px]"/>
+ <Footer/>
 </template>
 
 <script setup>

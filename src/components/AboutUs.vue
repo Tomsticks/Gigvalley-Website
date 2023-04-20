@@ -128,6 +128,14 @@
   #about-us {
       margin-top: 0;
     }
+    .abt-con {
+    width: 100%;
+  }
+  .aboutMain-con {
+    width: 90%;
+    padding: 0;
+  }
+
   }
 
 @media (max-width: 395px) {
