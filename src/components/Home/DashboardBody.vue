@@ -25,7 +25,7 @@ function closeAccountNumber() {
     openAccount.value = false
 }
 
-function fund(){
+function fund() {
     router.push('/Fund')
 }
 
@@ -38,7 +38,7 @@ function fund(){
 </script> 
 
 <template >
-    <div  v-if="openAccount"
+    <div v-if="openAccount"
         class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center ">
         <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px] sm:px-[20px] ">
             <span @click="closeAccountNumber" class="cursor-pointer flex justify-end">Close</span>
@@ -49,20 +49,25 @@ function fund(){
                 <h2 class="font-bold">BANK NAME: {{ bankName }}</h2>
                 <h3 class="text-[20px] ">ACCOUNT NAME: <span class="font-bold text-primary text-[20px]">GigValley -
                         Toluwani{{ }}</span></h3>
-                <h3 class="text-[20px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px]"> {{ accountNumber }}</span></h3>
+                <h3 class="text-[20px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px]"> {{ accountNumber
+                }}</span></h3>
                 <p>CHARGES: 25 NAIRA</p>
             </div>
         </div>
 
     </div>
 
-    <section @click="check"  class="top flex justify-between w-[80%] mt-[4vh] mb-[5vh] rounded-[20px] py-[20px] px-[20px]  lg:w-[90%] sm:w-[100%] "
+    <section @click="check"
+        class="top flex justify-between w-[80%] mt-[4vh] mb-[5vh] rounded-[20px] py-[20px] px-[20px]  lg:w-[90%] sm:w-[100%] "
         id="greetings-section">
         <div class="hero-text w-[50%] sm:w-[100%]">
-            <h1 class="text-[40px] text-[white] font-extrabold font-[Raleway] lg:text-[40px] sm:text-[25px] ">Welcome Back, <br> {{ name }}
+            <h1 class="text-[40px] text-[white] font-extrabold font-[Raleway] lg:text-[40px] sm:text-[25px] ">Welcome Back,
+                <br> {{ name }}
             </h1>
-            <p class="w-[90%] text-[15px] mt-[2vh] text-[white] sm:text-[20px] ">Your Account Has Been Verified Successfully</p>
-            <h3 class="mt-[20px] text-[15px]  text-[#43e975] sm:text-[11px]">MAKE A TRANSFER TO THIS UNIQUE ACCOUNT NUMBER GIVEN TO YOU AND
+            <p class="w-[90%] text-[15px] mt-[2vh] text-[white] sm:text-[20px] ">Your Account Has Been Verified Successfully
+            </p>
+            <h3 class="mt-[20px] text-[15px]  text-[#43e975] sm:text-[11px]">MAKE A TRANSFER TO THIS UNIQUE ACCOUNT NUMBER
+                GIVEN TO YOU AND
                 YOUR WALLET WILL BE CREDITED IMEDIATELY.</h3>
         </div>
 
@@ -71,13 +76,15 @@ function fund(){
             <img class="w-[50%] lg:w-[40%]  " src="./HomeImages/BodyAvatar.png" alt="">
         </div>
     </section>
-
+ 
     <section id="Banks" class="flex gap-[20px]">
-        <div @click="MoneiPoint" class="Money_Point flex items-center shadow-xl px-[10px] rounded-lg cursor-pointer sm:text-[10px]">
+        <div @click="MoneiPoint"
+            class="Money_Point flex items-center shadow-xl px-[10px] rounded-lg cursor-pointer sm:text-[10px]">
             <img class="h-[7vh]" src="./HomeImages/MoniPoint-removebg-preview.png" alt="">
             <p>Money point</p>
         </div>
-        <div @click="Providus" class="Money_Point flex items-center shadow-xl px-[10px] rounded-lg cursor-pointer sm:text-[10px]">
+        <div @click="Providus"
+            class="Money_Point flex items-center shadow-xl px-[10px] rounded-lg cursor-pointer sm:text-[10px]">
             <img class="h-[7vh]" src="./HomeImages/ProvidusBank-removebg-preview.png" alt="">
             <p>Providus Bank</p>
         </div>
@@ -92,28 +99,28 @@ function fund(){
                     <span class="text-[20px] font-bold sm:text-[10px]"> &#8358{{ balance }}</span>
                 </div>
             </div>
-            <button @click="fund" class="
-            py-[10px] px-[25px] text-[20px] flex rounded-[50px]  bg-primary text-white  sm:justify-center sm:px-[10px] sm:rounded-[10px] sm:text-[10px]  ">Fund
+            <button @click="fund" class="py-[10px] px-[25px] text-[20px] flex rounded-[50px]  bg-primary text-white  sm:justify-center sm:px-[10px] sm:rounded-[10px] sm:text-[10px]  ">Fund
                 Wallet</button>
         </div>
     </section>
 
     <section class="mt-[30px] w-[100%] items-center justify-center" id="services ">
         <h1 class="text-[40px] font-bold text-primary sm:text-[20px]">Our Avaliable Services</h1>
-        <div class="allServices border bg-[#F1F1F1] md:grid-cols-2 grid grid-cols-4 sm:grid-cols-2  gap-[20px] py-[30px] px-[20px] rounded-[5px] ">
+        <div
+            class="allServices border bg-[#F1F1F1] md:grid-cols-2 grid grid-cols-4 sm:grid-cols-2  gap-[20px] py-[30px] px-[20px] rounded-[5px] ">
             <!-- EACH -->
             <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col md:h-[20vh] ">
                 <div class="image">
                     <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/Airtime.png" alt="">
                 </div>
-                <p class="xs:text-[13px]">Airtime</p>
+                <p class="xs:text-[10px]">Airtime</p>
 
             </div>
             <div class="Buy_Data service flex flex-col md:h-[20vh] ">
                 <div class="image">
                     <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/Data.png" alt="">
                 </div>
-                <p class="xs:text-[13px]">Buy Data</p>
+                <p class="xs:text-[10px]">Buy Data</p>
             </div>
 
             <div class="Airtime_ToCash service  flex flex-col md:h-[20vh]  ">
@@ -121,15 +128,15 @@ function fund(){
                 <div class="image">
                     <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/AirCash.png" alt="">
                 </div>
-                <p class=" xs:text-[13px] ">Convert Airtime to Cash</p>
+                <p class=" xs:text-[10px] ">Convert Airtime to Cash</p>
 
             </div>
 
-            <div class="airtimeToCash service flex flex-col md:h-[20vh] ">
+            <div class="webDev service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh]sm:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/WebDev.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
-                <p class="xs:text-[13px]">Website Development</p>
+                <p class="xs:text-[10px]">Website Development</p>
 
             </div>
 
@@ -149,31 +156,34 @@ function fund(){
     background-repeat: no-repeat;
     background-size: cover;
 }
-.over{
+
+.over {
     -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 2.000) both;
-	        animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 2.000) both;
+    animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 2.000) both;
 
 }
+
 @-webkit-keyframes scale-up-ver-center {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-@keyframes scale-up-ver-center {
-  0% {
-    -webkit-transform: scaleY(0.6);
-            transform: scaleY(0.6);
-  }
-  100% {
-    -webkit-transform: scaleY(1.1);
-            transform: scaleY(1.1);
-  }
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
 }
 
-</style>
+@keyframes scale-up-ver-center {
+    0% {
+        -webkit-transform: scaleY(0.6);
+        transform: scaleY(0.6);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+    }
+}</style>
 

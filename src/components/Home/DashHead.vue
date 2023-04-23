@@ -1,6 +1,6 @@
 <template>
    <main class="flex items-center justify-between ">
-
+<!-- <div class="overlay bg-[#0000000b] absolute w-[100%] h-[100vh]">s</div> -->
     <svg @click="navFunction" class="h-[7vh] hidden lg:flex" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
 </svg>
@@ -29,6 +29,10 @@ import {provide} from 'vue'
 const toggleNav = defineProps(['pass'])
 
 const navFunction = toggleNav.pass
+const user = ref(false)
+function userDropDown(){
+  user.value = !user.value
+}
 
 
 
