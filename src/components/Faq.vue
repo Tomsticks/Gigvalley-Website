@@ -63,7 +63,7 @@ let item = data.forEach(item =>{
 </script>
 <style scoped>
 
-/* #FAQ {
+#FAQ {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,9 +118,9 @@ let item = data.forEach(item =>{
 .ptag-move {
   font-family: "inter", sans-serif;
   font-size: 12px;
-} */
+}
 
-/* @keyframes moveDown {
+@keyframes moveDown {
   0% {
     opacity: 0;
     top: -10px;
@@ -144,6 +144,6 @@ let item = data.forEach(item =>{
   100% {
     opacity: 0;
   }
-} */
+}
 
 </style>
