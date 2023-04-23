@@ -110,31 +110,31 @@ function fund() {
             class="allServices border bg-[#F1F1F1] md:grid-cols-2 grid grid-cols-4 sm:grid-cols-2  gap-[20px] py-[30px] px-[20px] rounded-[5px] ">
             <!-- EACH -->
             <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col md:h-[20vh] ">
-                <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] xs:w-[60%]" src="../Home/HomeImages/Airtime.png" alt="">
+                <div class="image items-center xs:h-[10vh]">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] " src="../Home/HomeImages/Airtime.png" alt="">
                 </div>
                 <p class="xs:text-[10px]">Airtime</p>
 
             </div>
             <div class="Buy_Data service flex flex-col md:h-[20vh] ">
-                <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] xs:w-[60%]" src="../Home/HomeImages/Data.png" alt="">
+                <div class="image items-center xs:h-[10vh]">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] " src="../Home/HomeImages/Data.png" alt="">
                 </div>
                 <p class="xs:text-[10px]">Buy Data</p>
             </div>
 
             <div class="Airtime_ToCash service  flex flex-col md:h-[20vh]  ">
 
-                <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] xs:w-[60%]" src="../Home/HomeImages/AirCash.png" alt="">
+                <div class="image items-center">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] " src="../Home/HomeImages/AirCash.png" alt="">
                 </div>
                 <p class=" xs:text-[10px] ">Convert Airtime to Cash</p>
 
             </div>
 
             <div class="webDev service flex flex-col md:h-[20vh] ">
-                <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] xs:w-[60%]" src="../Home/HomeImages/WebDev.png" alt="">
+                <div class="image items-center xs:h-[10vh]">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh] " src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
                 <p class="xs:text-[10px]">Website Development</p>
 
