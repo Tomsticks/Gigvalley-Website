@@ -1,8 +1,8 @@
 <template>
-  <header class=" itm h-[] w-[350px] overflow-y-scroll overflow-x-hidden flex flex-col items-center bg-[#] text-[#] border-r border-[black] lg:hidden   ">
-
+  <header  class=" shadow-2xl px-[40px]  overflow-y- overflow-x-hidden flex flex-col items-center bg-[#] text-[#] lg:absolute lg:bg-[white]  lg:z-10 overflow-y-scroll h-[100%] lg:left-[-350px]  ">
+<p @click="navClose">CLICK ME</p>
    
-    <div class="user border bg-[#F2F3F5] mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[px] items-center justify-center  flex ">
+    <div class="user shadow-md  mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[px] items-center justify-center  flex ">
       <div class="user-img">
         <img class="rounded-[50px] h-[7vh]" src="./HomeImages/avatar.png" alt="">
       </div>
@@ -11,7 +11,9 @@
         <h3 class="">Balance: <span class="amount"> &#8358{{ Balance }}</span></h3>
       </div>
     </div>
-    <div active class="links_div flex flex-col gap-[50px] mt-[30px] px-[5px]  ">
+    
+    <!-- Links -->
+    <div active class="links_div flex flex-col gap-[40px] mt-[30px] px-[5px]  ">
 
       <router-link class="flex link" active-class="active" to="/dashboard">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +59,7 @@
         </svg>Airtime to Cash</router-link>
 
       <!-- =========================== -->
-
+<hr>
       <router-link class="flex link" active-class="active" to="/"> <svg fill="none" stroke="currentColor" stroke-width="1.5"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -78,16 +80,21 @@
 </template>
 <script setup>
 import { ref } from 'vue'
-const Balance = ref('30, 000')
+import {inject} from 'vue'
 
+
+const Balance = ref('30, 000')
+const props = defineProps(['close'])
+
+const navClose = props.close
 
 
 const userImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIwASCJpICHRbFDOQXQ2S-pmikc8vs6K2GA&usqp=CAU'
 </script>
 <style scoped>
 .active {
-  background-color:#70008f66;
-  color:wh;
-  border-radius: 10px;
+  background-color:#70008f;
+  color:white;
+  /* border-radius: 10px; */
   padding: 10px 20px;
 }</style>
