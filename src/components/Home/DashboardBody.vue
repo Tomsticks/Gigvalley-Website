@@ -127,7 +127,7 @@ function fund(){
 
             <div class="airtimeToCash service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/WebDev.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh]sm:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
                 <p class="xs:text-[13px]">Website Development</p>
 
