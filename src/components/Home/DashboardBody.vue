@@ -104,14 +104,14 @@ function fund(){
             <!-- EACH -->
             <div @click="router.push('/buyAirtime')" class="Buy_Airtime service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/Airtime.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/Airtime.png" alt="">
                 </div>
                 <p class="xs:text-[13px]">Airtime</p>
 
             </div>
             <div class="Buy_Data service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/Data.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/Data.png" alt="">
                 </div>
                 <p class="xs:text-[13px]">Buy Data</p>
             </div>
@@ -119,7 +119,7 @@ function fund(){
             <div class="Airtime_ToCash service  flex flex-col md:h-[20vh]  ">
 
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/AirCash.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/AirCash.png" alt="">
                 </div>
                 <p class=" xs:text-[13px] ">Convert Airtime to Cash</p>
 
@@ -127,7 +127,7 @@ function fund(){
 
             <div class="airtimeToCash service flex flex-col md:h-[20vh] ">
                 <div class="image">
-                    <img class="w-[100%] h-[20vh] md:h-[10vh]" src="../Home/HomeImages/WebDev.png" alt="">
+                    <img class="w-[100%] h-[20vh] md:h-[10vh] xs:h-[7vh]" src="../Home/HomeImages/WebDev.png" alt="">
                 </div>
                 <p class="xs:text-[13px]">Website Development</p>
 
