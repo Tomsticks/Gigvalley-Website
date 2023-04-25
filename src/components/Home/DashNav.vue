@@ -1,6 +1,6 @@
 <template>
-  <header  class=" shadow-2xl px-[40px]  overflow-y- overflow-x-hidden flex flex-col items-center bg-[#] text-[#] lg:absolute lg:bg-[white]  lg:z-10 overflow-y-scroll h-[100%] lg:left-[-350px]  ">
-<p @click="navClose">CLICK ME</p>
+  <header  class=" shadow-2xl z-10 px-[40px]  overflow-y- overflow-x-hidden flex flex-col items-center bg-[#] text-[#] lg:absolute lg:bg-[white]  lg:z-1 overflow-y-scroll h-[100%] lg:left-[-350px]  ">
+<!-- <p @click="navClose">CLICK ME</p> -->
    
     <div class="user shadow-md  mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[px] items-center justify-center  flex ">
       <div class="user-img">
@@ -42,7 +42,7 @@
         </svg> Buy Airtime</router-link>
 
       <!-- ========================== -->
-      <router-link class="flex link" to="/buy Data"> <svg fill="none" stroke="currentColor" stroke-width="1.5"
+      <router-link class="flex link" active-class="active" to="/buyData"> <svg fill="none" stroke="currentColor" stroke-width="1.5"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z">
@@ -50,7 +50,7 @@
         </svg>Buy Data</router-link>
 
       <!-- ========================= -->
-      <router-link class="flex link" active-class="active" to="/Airtime to Cash">
+      <router-link class="flex link" active-class="active" to="/AirtimetoCash">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round"

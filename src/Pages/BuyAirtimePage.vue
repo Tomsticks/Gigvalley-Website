@@ -1,27 +1,48 @@
 <template>
-      <body class="flex items-center justify-center">
-  <main class="flex  border w-[100%]   ">
-  <Nav v-if="toggle"/>
-      
-<div class="submain flex flex-col">
-<div class="head border border-black ">
-  <Head :pass="openNav" class=" self-start self-center"/>
-</div>
-<body class="border border-black h-[90vh]">
-  <Airtime/>
-</body>
-</div>
-  </main>
-</body>
+  <div
+    @click="closeNav"
+    v-if="isOpen"
+    class="overlay bg-[#00000078] absolute h-[100%] w-[100%]"
+  ></div>
+  
+  <body class="flex">
+    <main class="flex h-[100vh] w-[100%] border-">
+      <Nav
+        :close="closeNav"
+        :class="{ class: isOpen }"
+        class="hidde"
+        :open="openNav"
+      />
+
+      <div class="submain flex flex-col w-[100%] px-[20px]">
+        <div
+          class="head rounded-tr-[20px] rounded-tl-[20px] filter  relative h-[6vh] shadow-lg pr-[20px]"
+        >
+          <Head :pass="openNav" />
+        </div>
+        <body class="h-[100vh]  border  overflow-y-scroll overflow-x-hidden">
+<BuyAirtime class="w-[100]"/>
+        </body>
+      </div>
+    </main>
+  </body>
 </template>
 
 <script setup>
-import Nav from '@/components/Home/DashNav.vue'
-import Airtime from '@/components/Home/BuyAirtime.vue'
-import Head from '@/components/Home/DashHead.vue'
-import {ref} from 'vue'
-const toggle = ref(false)
-function openNav(){
-    toggle.value = !toggle.value
+import Head from "@/components/Home/DashHead.vue";
+import Nav from "@/components/Home/DashNav.vue";
+import BuyAirtime from '@/components/Home/BuyAirtime.vue'
+import Body from "@/components/Home/DashboardBody.vue";
+import { ref } from "vue";
+const toggle = ref(false);
+
+const isOpen = ref(false);
+const check = !toggle.value;
+function openNav() {
+  isOpen.value = !isOpen.value;
+}
+
+function closeNav() {
+  isOpen.value = !isOpen.value;
 }
 </script>

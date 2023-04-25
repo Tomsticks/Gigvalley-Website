@@ -4,16 +4,18 @@
         <div class="nav-img">
           <img src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
         </div>
-        <a href="#test">Home</a>
+        <a href="#">Home</a>
         <a href="#about-us">About Us</a>
         <a href="#services">Service</a>
         <div class="market">
           <a href="#" class=" ">Market Place<i class="fa-solid fa-chevron-down"></i></a>
-          <div class="div hidden">
-            <router-link to="/BuyData">Buy Data</router-link>    
-            <router-link to="/BuyAirtime">Buy Airtime</router-link>    
-            <a href="">Cable Subscription</a>
-            <a href="">Electricity Bill</a>
+          <div  class="div hidden">
+            <router-link v-if="userIn" to="/BuyData">Buy Data</router-link>    
+            <router-link v-if="userIn" to="/BuyAirtime">Buy Airtime</router-link>    
+            <router-link v-if="userIn" to=""> Cable Subscription</router-link>
+            <router-link v-if="userIn" to="">Electricity Bill</router-link> 
+            <router-link v-if="userOut" to="/login">LOGIN</router-link> 
+            <router-link v-if="userOut" to="/register">REGISTER</router-link> 
           </div>
         </div>
         <button @click="loginPage" class="buy-data">Signin</button>
@@ -34,7 +36,7 @@ function openNav(){
 open = ref(false)
    console.log('ready');
 }
-
+const userOut = ref(true)
 </script>
 
 <style scoped>
@@ -128,7 +130,7 @@ nav .market {
 @media(max-width:720px){
   nav{
  position: absolute;
- display: flex;
+ /* display: flex; */
  flex-direction: column;
  background-color: #70008fee;
  height: 100vh;

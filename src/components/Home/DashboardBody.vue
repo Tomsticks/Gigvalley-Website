@@ -39,17 +39,17 @@ function fund() {
 
 <template >
     <div v-if="openAccount"
-        class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center ">
-        <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px] sm:px-[20px] ">
+        class="overlay_Body bg-[#0000004f] absolute left-0 top-0 w-[100%] h-[100vh] flex items-center justify-center  ">
+        <div class="over  bg-[white] h-[] py-[30px] px-[50px] rounded-[2px] sm:px-[20px] md:w-[300px]  ">
             <span @click="closeAccountNumber" class="cursor-pointer flex justify-end">Close</span>
             <div class="overlay_Content sm:text-[13px] ">
-                <p class="text-[25px] "> Automated Bank Transfer</p>
+                <p class="text-[25px] md:text-[10px] "> Automated Bank Transfer</p>
                 <!-- MAKE A TRANSFER TO THIS UNIQUE ACCOUNT NUMBER GIVEN TO YOU AND YOUR WALLET WILL BE CREDITED IMEDIATELY-->
 
-                <h2 class="font-bold">BANK NAME: {{ bankName }}</h2>
-                <h3 class="text-[20px] ">ACCOUNT NAME: <span class="font-bold text-primary text-[20px]">GigValley -
+                <h2 class="font-bold md:text-[10px]">BANK NAME: {{ bankName }}</h2>
+                <h3 class="text-[20px] md:text-[10px] ">ACCOUNT NAME: <span class="font-bold text-primary text-[20px] md:text-[15px]">GigValley -
                         Toluwani{{ }}</span></h3>
-                <h3 class="text-[20px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px]"> {{ accountNumber
+                <h3 class="text-[20px] md:text-[10px] ">ACCOUNT NUMBER: <span class="text-primary font-bold text-[25px] md:text-[15px]"> {{ accountNumber
                 }}</span></h3>
                 <p>CHARGES: 25 NAIRA</p>
             </div>

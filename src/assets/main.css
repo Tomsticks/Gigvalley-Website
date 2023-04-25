@@ -11,7 +11,7 @@
 }
 
 .link{
-    @apply  py-[10px] flex items-center gap-[5px] w-[250px]   text-[black] text-[16px]  font-[600] rounded-[13%] border-primary shadow-md  ;
+    @apply  py-[10px] flex items-center gap-[5px] w-[250px]   text-[black] text-[16px]  font-[600] border-b border-primary  ;
     
 }
 
@@ -20,6 +20,9 @@ svg{
 }
 .service {
     @apply border-2 flex flex-col justify-center text-center items-center py-[10px] h-[30vh] rounded-[10px] bg-[white];
+}
+html{
+    scroll-behavior: smooth;
 }
 
 

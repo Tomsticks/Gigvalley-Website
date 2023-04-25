@@ -5,7 +5,7 @@
     class="overlay bg-[#00000078] absolute h-[100%] w-[100%]"
   ></div>
   <body class="flex">
-    <main class="flex h-[100vh] w-[100%]]">
+    <main class="flex h-[100vh] w-[100%]">
       <Nav
         :close="closeNav"
         :class="{ class: isOpen }"
@@ -44,20 +44,21 @@ function closeNav() {
   isOpen.value = !isOpen.value;
 }
 </script>
-<style scoped>
+<style>
 .class {
-  left: 0px;
-  animation: fadeIn .5s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+    left: 0px;
+    animation: fadeIn .5s;
   }
-  50% {
-    opacity: 0.7;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
-  }
-}
 </style>
+

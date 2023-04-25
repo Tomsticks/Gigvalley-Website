@@ -1,6 +1,6 @@
 <template>
     <div class="font-mono">
-      <div class="w-[75%] bg-[#ddd]">
+      <div class="w-[100%] bg-[#ddd]">
         <div class="flex items-center justify-center p-[2px] mt-[40px] mb-[20px] capitalize text-white bg-primary h-[30px] gap-[2px] relative">
           <div class="w-[10px] h-[10px] rounded-full bg-white"></div>
           <p>buy data</p>

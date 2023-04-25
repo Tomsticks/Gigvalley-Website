@@ -10,8 +10,8 @@ import Fund from '@/Pages/PaymentGateWay.vue'
     history:createWebHistory(import.meta.env.BASE_URL),
     routes:[
         {path:'/', name:'Home', component:HomePage},
-        {path:'/BuyData', name:'Buy data', component:BuyData},
-        {path:'/BuyAirtime', name:'Buy airtime', component:BuyAirtime},
+        {path:'/BuyData', name:'Buydata', component:BuyData},
+        {path:'/BuyAirtime', name:'Buyairtime', component:BuyAirtime},
         {path:'/login', name:'login', component:LoginPage},
         {path:'/register', name:'register', component:RegisterPage},
         {path:'/dashboard', name:'dashboard', component:Dashboard},
@@ -20,4 +20,11 @@ import Fund from '@/Pages/PaymentGateWay.vue'
     ]
 })
 
-// router.afterEach(to, index, from)
+const scrollBehavior = (to, from, savedPosition) => {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  };
+//  
