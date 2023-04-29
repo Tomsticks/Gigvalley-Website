@@ -1,14 +1,14 @@
 <template>
- <nav :open="open" class=" flex-col border border-[red] hidden md:flex z-10 " id="nav" >
-        <div class="nav-img flex justify-between items-center">
-          <img class="w-[10vh]" src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
+ <nav :open="open" class=" flex-col border  hidden md:flex z-10  " id="nav" >
+        <div class="nav-img flex justify-between items-center px-[20px]">
+          <img class="h-[10vh]" src="@/assets/images/Nav-Logo.png" alt="GigValley Logo" />
           <div @click="open" class="bar">
             <svg  class="h-[5vh]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
 </svg>
           </div>
         </div>
-        <div  v-if="link" class="links flex flex-col absolute top-[60px] bg-primary text-[white] w-[100%]">
+        <div  v-if="link" class="links flex flex-col absolute top-[60px] bg-primary text-[white] w-[100%] ">
           <div @click="open" class="navigator flex flex-col">
         <a href="#">Home</a>
         <a href="#about-us">About Us</a>
@@ -44,7 +44,7 @@ console.log(props.open);
 </script> 
 <style>
 .marketPlace{
-  transition: ease-in-out 5s;
+ 
 }
 
 

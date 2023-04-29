@@ -40,9 +40,7 @@ const userOut = ref(true)
 </script>
 
 <style scoped>
-.class{
-background-color: red;
-}
+
 nav {
   display: flex;
   align-items: center;

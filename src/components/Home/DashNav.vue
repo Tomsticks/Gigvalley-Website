@@ -1,5 +1,5 @@
 <template>
-  <header  class=" shadow-2xl z-10 px-[40px]  overflow-y- overflow-x-hidden flex flex-col items-center bg-[#] text-[#] lg:absolute lg:bg-[white]  lg:z-1 overflow-y-scroll h-[100%] lg:left-[-350px]  ">
+  <header  class=" shadow-2xl z-10 px-[40px] overflow-y- overflow-x-hidden flex flex-col items-center lg:absolute lg:bg-[white]  lg:z-1 overflow-y-scroll h-[100%] lg:left-[-350px]  ">
 <!-- <p @click="navClose">CLICK ME</p> -->
    
     <div class="user shadow-md  mt-[10px] w-[100%] py-[15px] gap-[10px] rounded-[px] items-center justify-center  flex ">

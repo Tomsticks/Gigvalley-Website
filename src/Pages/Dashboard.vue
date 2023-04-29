@@ -48,6 +48,7 @@ function closeNav() {
 .class {
     left: 0px;
     animation: fadeIn .5s;
+    /* width: 500px; */
   }
   @keyframes fadeIn {
     0% {
