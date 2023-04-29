@@ -45,10 +45,12 @@ onUnmounted(() => {
 
 <style scoped>
 .class{
-  position: sticky;
+  position: fixed;
+  width: 100%;
 top:0 ;
 z-index: 10;
 background-color: white;
+margin-top: 0;
 }
 </style>
 
