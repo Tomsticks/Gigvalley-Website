@@ -1,8 +1,8 @@
 <template>
-  <nav :open="open" class="flex-col border hidden md:flex z-10" id="nav">
+  <nav :open="open" class="flex-col border hidden md:flex z-10 " id="nav">
     <div class="nav-img flex justify-between items-center px-[20px]">
       <img
-        class="h-[10vh]"
+        class="h-[7vh]"
         src="@/assets/images/Nav-Logo.png"
         alt="GigValley Logo"
       />
@@ -28,14 +28,14 @@
     <div
       
       :class="{show:link, out:!link}"
-      class="links  flex-col absolute  hidden top-[60px] bg-primary text-[white] w-[100%] rounded-[5px]"
+      class="links  flex-col absolute  hidden top-[60px] bg-primary text-[white] w-[100%]  "
     >
-      <div @click="open" class="navigator flex flex-col ">
+      <div @click="open" class="navigator flex flex-col gap-[10px] text-[20px] uppercase font-[bolder]  ">
         <a href="#">Home</a>
         <a href="#about-us">About Us</a>
         <a href="#services">Service</a>
       </div>
-      <h2 @click="openMarket" class=" ">
+      <h2 @click="openMarket" class=" text-[red] font-[bold] text-[20px] ">
         Market Place<i class="fa-solid fa-chevron-down"></i>
       </h2>
       <div v-if="linked" class="marketPlace flex flex-col">
@@ -57,6 +57,9 @@ const userOut = ref(true);
 const link = ref(false);
 function open() {
   link.value = !link.value;
+  if(link.value === false){
+    linked.value = false
+  }
 }
 const linked = ref(false);
 function openMarket() {
@@ -64,8 +67,15 @@ function openMarket() {
 }
 const props = defineProps(["open"]);
 // console.log(props.open);
+
+if(link.value === true){
+  window.addEventListener('click', function(){
+ link.value = false
+})
+  }
+
 </script>
-<style>
+<style scoped>
 .marketPlace {
 }
 
