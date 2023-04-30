@@ -1,5 +1,6 @@
 <template>
   <div
+  :class="{overlay:isOpen}"
     @click="closeNav"
     v-if="isOpen"
     class="overlay bg-[#00000078] absolute h-[100%] w-[100%]"
@@ -8,7 +9,7 @@
     <main class="flex h-[100vh] w-[100%]">
       <Nav
         :close="closeNav"
-        :class="{ class: isOpen }"
+        :class="{ class: isOpen , class2:isclose}"
         class="hidde"
         :open="openNav"
       />
@@ -33,6 +34,7 @@ import Nav from "@/components/Home/DashNav.vue";
 import Body from "@/components/Home/DashboardBody.vue";
 import { ref } from "vue";
 const toggle = ref(false);
+const isclose = ref(false);
 
 const isOpen = ref(false);
 const check = !toggle.value;
@@ -41,25 +43,27 @@ function openNav() {
 }
 
 function closeNav() {
-  isOpen.value = !isOpen.value;
+  isOpen.value = false
+  isclose.value = true
 }
 </script>
 <style>
 .class {
-    left: 0px;
-    animation: fadeIn .5s;
-    /* width: 500px; */
+    left: -250px;
+    animation: slide 0.5s forwards;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
+  .overlay{
+    transition: 10s ease-in-out;
   }
+  @keyframes slide {
+    100% { left: 0px; }
+}
+/* .class2{
+  left: 0px;
+    animation: slide2 0.5s forwards;
+}
+@keyframes slide2 {
+    100% { left: -350px; }
+} */
 </style>
 

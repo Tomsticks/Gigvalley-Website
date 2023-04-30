@@ -92,11 +92,11 @@ function passwordVal(){
   if(password.value.length > 7){
     passwordCheck.value = false
   }else{
-    passwordCheck.value = true
+    passwordCheck.value = true  
   }
 }
-const submit = async()=>{
-  if(!fullname.value || !username.value || !email.value || !phone.value || password.value.length >= 8){
+const submit = ()=>{
+  if(!fullname.value || !username.value || !email.value || !phone.value || passwordCheck.value === true){
 alert('all field are requried')
   }else{
     alert('welcome')  

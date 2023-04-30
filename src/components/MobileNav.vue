@@ -68,11 +68,11 @@ function openMarket() {
 const props = defineProps(["open"]);
 // console.log(props.open);
 
-if(link.value === true){
-  window.addEventListener('click', function(){
- link.value = false
-})
-  }
+// if(link.value === true){
+//   window.addEventListener('click', function(){
+//  link.value = false
+// })
+//   }
 
 </script>
 <style scoped>
