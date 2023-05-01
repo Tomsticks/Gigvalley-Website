@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       colors:{
         'primary':'#70008f'
-      }
+      },
+      fontFamily: {
+        'cursive': ['cursive', 'system-ui', ],
+      },
     },
     screens: {
       '2xl': {'max': '1535px'},
