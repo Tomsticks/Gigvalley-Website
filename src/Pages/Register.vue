@@ -108,6 +108,7 @@ alert('all field are requried')
     // localStorage.setItem('users', JSON.stringify(user))
     console.log(allUsers.value);
     
+    
   }
   
 }

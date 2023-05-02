@@ -2,7 +2,7 @@
   <!-- <div v-if="navDrop" class="overlay absolute bg-[#00000007] w-[100%] h-[200vh]">d</div> -->
   <!-- <div @click="" class="overlay bg-[#00000064] absolute w-[100%] h-[100vh] z-0 "></div> -->
  <main class="  flex flex-col overflow-x-hidden  ">
-  <Nav :class="{class:isScrolled}"   
+  <Nav :class="{scroll:isScrolled}"   
    class="px-[25px] z-20 md:hidden" />
   <MobileNav :class="{class:isScrolled}" class="z-[20]"/>
   <Hero class="px-[25px]"/>
@@ -44,7 +44,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.class{
+.scroll{
   position: fixed;
   width: 100%;
 top:0 ;

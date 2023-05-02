@@ -37,6 +37,17 @@ function getStarted(){
 function forNow(){
   router.push('/dashboard')
 }
+
+
+const typewriterdiv = document.querySelector('.type');
+// var typing= new Typed(typewriterdiv, {
+//   // add 
+//   strings: ['',  'DATA', 'VTU', 'SME'],
+//   typeSpeed:200,
+//   loop: true, 
+//   showCursor: false,
+//   fadeOutClass: 'typed-fade-in'
+// });
 </script>
 
 <style scoped>

@@ -60,12 +60,18 @@
 
       <!-- =========================== -->
 <hr>
-      <router-link class="flex link" active-class="active" to="/"> <svg fill="none" stroke="currentColor" stroke-width="1.5"
+      <a @click="acountsFunction" class="flex link cursor-pointer" active-class="active" to="/"> <svg fill="none" stroke="currentColor" stroke-width="1.5"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z">
           </path>
-        </svg>Account</router-link>
+        </svg>Account</a>
+        <div v-if="toggleAccounts" class="accountsOption bg-primary px-[20px] py-[30px] flex flex-col gap-[20px] rounded-xl">
+          <router-link class="flex text-[white] border-none" active-class="active" to="/">Change Pin</router-link>
+
+          <router-link class="flex text-[white] border-none" active-class="active" to="/">Tanscation History</router-link>
+          <router-link class="flex text-[white] border-none" active-class="active" to="/"> LogOut</router-link>
+        </div>
 
       <!-- ============================== -->
 
@@ -90,6 +96,12 @@ const navClose = props.close
 
 
 const userImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIwASCJpICHRbFDOQXQ2S-pmikc8vs6K2GA&usqp=CAU'
+const toggleAccounts = ref(false)
+function acountsFunction(){
+toggleAccounts.value = !toggleAccounts.value
+}
+
+
 </script>
 <style scoped>
 .active {
