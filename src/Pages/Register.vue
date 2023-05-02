@@ -64,20 +64,16 @@
 
 <script setup>
 import { ref, computed} from "vue";
-const fullname = ref('');
+const fullname = ref("");
 const username = ref("");
 const email = ref("");
 const phone = ref("");
 const password = ref("");
 const passwordCheck = ref(false)
 
-const user = {
-  fullname:fullname.value,
-  username: username.value,
-  email: email.value,
-  phone: phone.value,
-  password: password.value,
-};
+
+
+
 
 
 
@@ -96,11 +92,24 @@ function passwordVal(){
   }
 }
 const submit = ()=>{
-  if(!fullname.value || !username.value || !email.value || !phone.value || passwordCheck.value === true){
+  const user = {
+  fullname:fullname.value,
+  username: username.value,
+  email: email.value,
+  phone: phone.value,
+  password: password.value,
+};
+const allUsers = ref([])
+  if(!fullname.value || !username.value || !email.value || !phone.value || passwordCheck.value){
 alert('all field are requried')
   }else{
-    alert('welcome')  
+    alert('welcome') 
+    allUsers.value.push(user) 
+    // localStorage.setItem('users', JSON.stringify(user))
+    console.log(allUsers.value);
+    
   }
+  
 }
 
 
