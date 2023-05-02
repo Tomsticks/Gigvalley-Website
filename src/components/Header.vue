@@ -25,7 +25,7 @@
 import {ref} from 'vue'
 import{useRouter} from 'vue-router'
 const router = useRouter()
-
+const userIn = ref(false)
 function loginPage(){
   router.push('/login')
 }

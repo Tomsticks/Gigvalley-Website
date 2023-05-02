@@ -1,5 +1,6 @@
 <template>
   <nav :open="open" class="flex-col border hidden md:flex z-10 " id="nav">
+    
     <div class="nav-img flex justify-between items-center px-[20px]">
       <img
         class="h-[7vh]"
@@ -52,6 +53,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
+
 const userIn = ref(false);
 const userOut = ref(true);
 const link = ref(false);
@@ -65,8 +67,6 @@ const linked = ref(false);
 function openMarket() {
   linked.value = !linked.value;
 }
-const props = defineProps(["open"]);
-// console.log(props.open);
 
 // if(link.value === true){
 //   window.addEventListener('click', function(){

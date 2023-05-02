@@ -1,16 +1,16 @@
 <template>
-  <div v-if="navDrop" class="overlay absolute bg-[#00000007] w-[100%] h-[200vh]">d</div>
-  <div v-if="ff" class="overlay bg-[#00000000] w-[100%] absolute h-[400vh]">s</div>
- <main class="  flex flex-col  ">
-  <Nav :class="{class:isScrolled}" :open="open" 
-   class="px-[25px] md:hidden" />
-  <MobileNav :class="{class:isScrolled}" class="z-[10]"/>
+  <!-- <div v-if="navDrop" class="overlay absolute bg-[#00000007] w-[100%] h-[200vh]">d</div> -->
+  <!-- <div @click="" class="overlay bg-[#00000064] absolute w-[100%] h-[100vh] z-0 "></div> -->
+ <main class="  flex flex-col overflow-x-hidden  ">
+  <Nav :class="{class:isScrolled}"   
+   class="px-[25px] z-20 md:hidden" />
+  <MobileNav :class="{class:isScrolled}" class="z-[20]"/>
   <Hero class="px-[25px]"/>
 <Testimoies class="px-[25px]"/>
 <About class="px-[25px]"/>
 <Services class="px-[25px]"/>
-<Custormers class="px-[25px]"/>
-<Faq class="px-[25px]"/>
+<Custormers />
+<Faq class="px-[25px]"/> 
 
  </main>
  <Footer/>

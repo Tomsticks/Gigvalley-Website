@@ -183,10 +183,10 @@ input {
   margin-bottom: 8px;
   height: 30px;
   width: 100%;
-  border: 1px solid rgba(136, 133, 133, 0.702);
+  border: 1px solid rgb(232, 235, 235);
   outline: none;
   padding: 20px;
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .sign-up a {
