@@ -1,269 +1,146 @@
 <template>
-    <!-- ===========CUSTOMER========= -->
-    <section id="client">
-        <h1>What Our <span>Clients</span> Are Saying</h1>
-        <div class="customer-comment_con">
-          <div class="move-container">
-            <div class="move-wrapper">
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt="Customer Testimony for gigvalley data plan"
-                  />
-                  <h3>James Ngozie</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  " We are so happy with Gigvalley. Not only did they provide us
-                  with a service we can count on, they reduced our cost".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt="Gigvalley data plan customer's view"
-                  />
-                  <h3>Mary Famuagun</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  " GIGvalley Data plans are cheap they deliver ASAP. They are
-                  simply amazing ".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt="customer's product's testimonials"
-                  />
-                  <h3>John Moh</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "This is SUPER efficient and Helpful. They solve my data and
-                  VTU problems ".
-                </p>
-              </div>
-         
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img
-                    src="@/assets/images/agent.png"
-                    alt="developer's Testimony"
-                  />
-                  <h3>Miracle Olaniyan</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  "Getting in touch with families has been easy and amazing with
-                  this platform, Gigvalley data plans are reliable and
-                  dependable. I trust their services".
-                </p>
-              </div>
-              <div class="customer-1">
-                <div class="custormers-head">
-                  <img src="@/assets/images/agent.png" alt="" />
-                  <h3>Tope Osunrayi</h3>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <p>
-                  " My fear of losing money when funding my wallet is gone, they
-                  are well optimized".
-                </p>
-              </div>
-            </div>
-          </div>
+  <h1 class="text-center text-2xl font-medium mb-4 mt-16">What Our <span>Clients</span> Are Saying</h1>
+  <div class="carousel relative">
+    <div class="slider absolute inset-0 flex " :style="{ transform: `translateX(-${slide}px)` }">
+      <div class="slide flex-shrink-0 my-1 mr-[5px] bg-[#eee] rounded-xl shadow xs:w-[320px] sm:w-[390px] w-[395px]" v-for="(item, index) in items" :key="index">
+       <div class="flex gap-1">
+         <!-- <img :src="item.image" alt="image"> -->
+         <img src="../assets/images/agent.png" class=" sm:w-28 sm:h-28 xs:w-20 xs:h-20 w-32 h-32" alt="">
+       <div class="flex flex-col text-left justify-center">
+        <h3 class="text-lg font-medium capitalize">{{ item.name }}</h3>
+        <h4 class="text-sm font-medium capitalize opacity-60">{{ item.about }}</h4>
+        <div class="flex gap-1">
+          <svg class="w-6 h-6 p-1 text-white bg-yellow-600 rounded-full" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+          <svg class="w-6 h-6 p-1 text-white bg-yellow-600 rounded-full" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+          <svg class="w-6 h-6 p-1 text-white bg-yellow-600 rounded-full" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+          <svg class="w-6 h-6 p-1 text-white bg-yellow-600 rounded-full" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+          <svg class="w-6 h-6 p-1 text-white bg-yellow-600 rounded-full" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
         </div>
-      </section>
+      </div>
+      
+    </div>
+    <p class="text-2xl">
+      <sub class=" sm:text-xl xs:text-lg text-2xl text-yellow-700 font-cursive">" </sub>{{item.comment}}<sub class="text-2xl text-yellow-700 font-cursive "> "</sub>
+    </p>
+    </div>
+  </div>
+  </div>
 </template>
 
-<style scoped>
-.curstomers {
-  display: flex;
-  justify-content: center;
-}
-#client {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: center;
-  margin: 0 auto;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(0);
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const items = ref([
+  {
+    name:'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
+  },
+  {
+    name: 'ajanaku johnson',
+    image: "../assets/images/agent.png",
+    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
+    about:'frontend developer'
   }
-  25% {
-    transform: translateX(0);
-  }
-  30% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  55% {
-    transform: translateX(-150%);
-  }
-  75% {
-    transform: translateX(-160%);
-  }
-  80% {
-    transform: translateX(-150%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+]);
+
+const slide = ref(0);
+const slideWidth = ref(0);
+let interval;
+
+function startAutoSlide() {
+  interval = setInterval(() => {
+    slide.value = (slide.value + slideWidth.value) % (items.value.length - 9 * slideWidth.value );
+  }, 3000);
 }
 
-.col-lg-3 {
-  text-align: left;
-}
-.customer-comment_con::-webkit-scrollbar {
-  width: 12px;
-  background-color: white;
-  display: none;
-}
+onMounted(() => {
+  slideWidth.value = document.querySelector('.slide').clientWidth;
+  startAutoSlide();
+});
 
-.customer-comment_con::-webkit-scrollbar-track {
-  background-color: white;
-  display: none;
-}
+onBeforeUnmount(() => {
+  clearInterval(interval);
+});
+</script>
 
-.customer-comment_con::-webkit-scrollbar-thumb {
-  background: none;
-  border-radius: 50px;
-  position: absolute;
-  display: none;
-}
-
-.customer-comment_con::-webkit-scrollbar-thumb:hover {
-  display: none;
-  background: none;
-}
-.customer-comment_con {
-  display: flex;
-  gap: 10px;
+<style>
+.carousel {
   width: 100%;
-  overflow: scroll;
-  /* padding: 10vh; */
+  height: 300px;
+  overflow: hidden;
 }
-.customer-1 {
-  height: 40vh;
-  min-width: 50vh;
-  border-radius: 20px;
-  box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
-  -webkit-box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
-  -moz-box-shadow: 1px 0px 7px 2px rgba(18, 17, 17, 0.25);
-  padding: 20px;
-}
-.customer-1 img {
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-}
-.custormers-head {
-  display: grid;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
-  grid-template-columns: 30% 70%;
-}
-
-/* .customer-1 p{
-} */
-
-div.stars {
-  position: absolute;
-  top: 5em;
-  padding-left: 100px;
-  display: none;
-}
-
-.custormers-head h3 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#client h1 {
-  text-align: center;
-  margin-top: 10vh;
-  font-size: 1.4em;
-  font-weight: bold;
-}
-#client h1 span {
-  border-bottom: 3px solid var(--primary-color);
-}
-
-.move-container {
-  width: 100%;
-  overflow: scroll;
-  border-radius: 5px;
-}
-
-.move-container::-webkit-scrollbar-button {
-  color: transparent;
-  background-color: transparent;
-  width: 1px;
-  display: none;
-}
-.move-container::-webkit-scrollbar-track {
-  color: transparent;
-  background-color: transparent;
-  width: 1px;
-  display: none;
-}
-.move-container::-webkit-scrollbar-thumb {
-  color: transparent;
-  background-color: transparent;
-  width: 1px;
-  display: none;
-}
-.move-container::-webkit-scrollbar-track-piece {
-  color: transparent;
-  background-color: transparent;
-  width: 1px;
-  display: none;
-}
-
-.move-wrapper {
-  width: 100%;
+.slider {
   display: flex;
-  gap: 10px;
-  animation: slide 20s infinite linear alternate;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
   padding: 10px;
+  text-align: center;
+  @apply flex flex-col justify-center
+}
+.slide img {
+  max-width: 100%;
 }
 </style>
