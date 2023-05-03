@@ -114,7 +114,7 @@ h1{
 .input{
     display: block;
     align-items: center;
-    /* border: 1px solid green; */
+
 }
 
 input{

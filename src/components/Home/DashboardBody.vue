@@ -11,7 +11,7 @@ const accountNumber = ref('')
 
 
 function MoneiPoint() {
-    openAccount.value = true
+    openAccount.value = true 
     bankName.value = 'MoniePoint'
     accountNumber.value = 9035783851
 }

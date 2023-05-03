@@ -8,7 +8,7 @@
         <a href="#about-us">About Us</a>
         <a href="#services">Service</a>
         <div class="market">
-          <a href="#" class=" ">Market Place<i class="fa-solid fa-chevron-down"></i></a>
+          <a class=" cursor-pointer ">Market Place<i class="fa-solid fa-chevron-down"></i></a>
           <div  class="div hidden">
             <router-link v-if="userIn" to="/BuyData">Buy Data</router-link>    
             <router-link v-if="userIn" to="/BuyAirtime">Buy Airtime</router-link>    
@@ -25,7 +25,7 @@
 import {ref} from 'vue'
 import{useRouter} from 'vue-router'
 const router = useRouter()
-
+const userIn = ref(false)
 function loginPage(){
   router.push('/login')
 }
@@ -40,9 +40,7 @@ const userOut = ref(true)
 </script>
 
 <style scoped>
-.class{
-background-color: red;
-}
+
 nav {
   display: flex;
   align-items: center;

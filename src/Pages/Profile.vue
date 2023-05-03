@@ -1,5 +1,5 @@
 <template>
-  <div
+    <div
   :class="{overlay:isOpen}"
     @click="closeNav"
     v-if="isOpen"
@@ -21,7 +21,7 @@
           <Head :pass="openNav" />
         </div>
         <body class="h-[100vh] overflow-y-scroll overflow-x-hidden">
-          <Body />
+          <!-- <Body /> -->
         </body>
       </div>
     </main>
@@ -31,7 +31,7 @@
 <script setup>
 import Head from "@/components/Home/DashHead.vue";
 import Nav from "@/components/Home/DashNav.vue";
-import Body from "@/components/Home/DashboardBody.vue";
+// import Body from "@/components/Home/DashboardBody.vue";
 import { ref } from "vue";
 const toggle = ref(false);
 const isclose = ref(false);
@@ -45,25 +45,4 @@ function openNav() {
 function closeNav() {
   isOpen.value = false
   isclose.value = true
-}
-</script>
-<style>
-.class {
-    left: -250px;
-    animation: slide 0.5s forwards;
-  }
-  .overlay{
-    transition: 10s ease-in-out;
-  }
-  @keyframes slide {
-    100% { left: 0px; }
-}
-/* .class2{
-  left: -350px;
-    animation: slide2 0.5s backwards;
-} 
-@keyframes slide2 {
-    100% { left: -350px; }
-}  */
-</style>
-
+}</script>

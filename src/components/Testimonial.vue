@@ -1,6 +1,6 @@
 <template>
       <section id="test">
-        <div class="Progress">
+        <div class="Progress ">
           <p>20+ <span>Completed Project</span></p>
           <p>100+ <span>Happy Customers</span></p>
           <p>500+ <span>Transactions</span></p>
@@ -15,7 +15,7 @@
 }
 .Progress {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--secondary-color);
   box-shadow: 0 0 7px 0 rgb(226, 182, 226);
   padding: 2em;
@@ -44,23 +44,35 @@
 .Progress {
     width: 95%;
     display: flex;
+    justify-content: space-between;
   }
 .Progress p {
     color: var(--primary-color);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     font-weight: 500;
     font-size: clamp(25px, 4vw, 50px);
   }
   .Progress p > span {
-    font-size: clamp(8px, 3vw, 50px);
+    font-size: clamp(8px, 1vw, 50px);
   }
 }
 @media (max-width: 437px) {
 .Progress p {
     font-size: clamp(15px, 4vw, 50px);
-    font-weight: 300;
+    /* font-weight: 300; */
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    text-align: center;
+  }
+  .Progress{
+    display: flex;
+    align-items:first baseline;
+    justify-content: space-between;
+    gap: 2px;
+    
   }
 }
 </style>

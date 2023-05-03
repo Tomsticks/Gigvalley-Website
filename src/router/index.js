@@ -6,6 +6,8 @@ import LoginPage from '@/Pages/Login.vue'
 import RegisterPage from '@/Pages/Register.vue'
 import Dashboard from '@/Pages/Dashboard.vue'
 import Fund from '@/Pages/PaymentGateWay.vue'
+import AirtimeToCash from '@/Pages/AirtimeToCash.vue'
+import Profile from '@/Pages/Profile.vue'
  export const router = createRouter({
     history:createWebHistory(import.meta.env.BASE_URL),
     routes:[
@@ -15,7 +17,9 @@ import Fund from '@/Pages/PaymentGateWay.vue'
         {path:'/login', name:'login', component:LoginPage},
         {path:'/register', name:'register', component:RegisterPage},
         {path:'/dashboard', name:'dashboard', component:Dashboard},
-        {path:'/Fund', name:'Fund', component:Fund}
+        {path:'/Fund', name:'Fund', component:Fund},
+        {path:'/airtimeToCash', name:'airtocash', component:AirtimeToCash},
+        {path:'/profile', name:'Profile', component:Profile}
        
     ]
 })

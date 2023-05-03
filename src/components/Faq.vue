@@ -12,8 +12,8 @@
           <h2>FAQ</h2>
           <div class="question-zone">
             <div v-for="(items, index) in data" :key="index" class="accordion" >
-              <div  @click="showMe(index)" class="accordion__question">
-                <p >{{ items.que }}<i class="fa-solid fa-plus"></i></p>
+              <div @click="showMe(index)" class="accordion__question">
+                <h4 :class="{rotate:showMe}" >{{ items.que }}<i class="fa-solid fa-plus"></i></h4>
               </div>
               <div class="accordion__answer">
                 <p v-if="items.open" class="ptag-move"> {{ items.ans}}</p>
@@ -70,7 +70,9 @@ id:5
 
 </script>
 <style scoped>
-
+/* .rotate{
+  color: blue;
+} */
 #FAQ {
   display: flex;
   justify-content: space-between;
@@ -99,10 +101,12 @@ id:5
   font-weight: bold;
 }
 
-.Faq .question-zone p {
+.Faq .question-zone h4 {
   border-bottom: 1px solid black;
   justify-content: space-between;
   font-weight: bold;
+  display: flex;
+  
 }
 .none {
   display: none;
