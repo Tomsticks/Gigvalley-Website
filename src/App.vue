@@ -1,6 +1,7 @@
 <template>
    
-    <RouterView/>
+    <RouterView />
+   
     <!-- <Login/> -->
    </template>
    <script setup>
