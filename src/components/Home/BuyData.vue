@@ -1,7 +1,7 @@
 <template>
     <div class="font-mono">
       <div class="w-[100%] bg-[#ddd]">
-        <div class="flex items-center justify-center p-[2px] mt-[40px] mb-[20px] capitalize text-white bg-primary h-[30px] gap-[2px] relative">
+        <div class="flex items-center justify-center p-[2px] mt-[40px] mb-[20px] capitalize text-white bg-primary h-[30px] gap-[2px] ">
           <div class="w-[10px] h-[10px] rounded-full bg-white"></div>
           <p>buy data</p>
           <div class="w-[10px] h-[10px] rounded-full bg-white"></div>
@@ -18,11 +18,10 @@
                 <option value="" required disabled selected hidden>
                   --select--
                 </option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
+                <option value="SME">SME</option>
+                <option value="VTU">VTU</option>
+                <option value="GIFTING">GIFTING</option>
+               
               </select>
             </div>
             <div class="mb-[20px] flex flex-col">
@@ -31,33 +30,38 @@
                 <option value="" required disabled selected hidden>
                   --select--
                 </option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
-                <option value="">temmie smiless</option>
+                <option value="Mtn">MTN</option>
+              <option value="Glo">GLO</option>
+              <option value="Airtel">AIRTEL</option>
               </select>
             </div>
             <div class="mb-[20px] flex flex-col">
               <label class="capitalize  mb-[20px] text-[20px]" for="phone">phone</label>
               <input
                 placeholder="enter phone number"
-                type="number"
+                type="text"
                 id="phone"
                 class="h-[35px] border border-black border-opacity-30 hover:border-opacity-80 placeholder:text-[#dde] placeholder:pl-[10px] placeholder:text-[20px]"
                 name="phone"
+                maxlength="11"
               />
             </div>
+
+
+
             <div class="mb-[20px] flex flex-col">
               <label class="capitalize mb-[20px] text-[20px]" for="original">original amount</label>
               <div class="flex flex-row items-center justify-center border border-black border-opacity-30 hover:border-opacity-80">
                 <p class="w-[5%] bg-[#bbb] h-[35px] text-[20px] pt-[5px] pb-[5px] pr-[5px]">NGN</p>
                 <input
-                  placeholder=".0"
-                  type="number"
+                  placeholder="Amount"
+                  type="text"
                   id="original"
                   class="h-[35px] bg-[#bbb] w-[90%] border-none outline-[rgba(0,0,0,0.575)] outline-0 placeholder:text-[#dde] placeholder:pl-[10px] placeholder:text-[20px]"
                   name="original"
+                  v-model="userPhoneNumber"
+                 maxlength="11"
+                  
                 />
                 <p class="w-[5%] bg-[#bbb] h-[35px] text-[20px] pt-[5px] pb-[5px] pr-[5px]">.00</p>
               </div>
@@ -76,20 +80,23 @@
                 <p class="w-[5%] bg-[#bbb] h-[35px] text-[20px] pt-[5px] pb-[5px] pr-[5px]">.00</p>
               </div>
             </div>
-            <div class="flex flex-row items-center gap-[5px] mt-2">
-              <input
-                placeholder=""
-                type="checkbox"
-                name="check"
-                id="check"
-                class=" h-[35px]"
-              />
-              <label class="capitalize mb-[0px] text-[20px]" for="check">bypass number validator</label>
-            </div>
-            <p class="text-[#FFF] bg-primary rounded-[10px]w-[100%] p-[5px] text-[20px] capitalize text-center rounded-full">purchase</p>
+           
+            <p @click="submit" class="text-[#FFF] bg-primary rounded-[10px]w-[100%] p-[5px] text-[20px] capitalize text-center rounded-full">purchase</p>
           </fieldset>
         </form>
       
       </div>
     </div>
 </template>
+
+<script setup>
+import {ref} from 'vue'
+const userPhoneNumber = ref('')
+const PhoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+function submit(params) {
+  console.log(userPhoneNumber.value);
+}
+
+
+
+</script>

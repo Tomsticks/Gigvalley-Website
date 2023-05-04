@@ -1,7 +1,6 @@
 <template>
-  <!-- <div v-if="navDrop" class="overlay absolute bg-[#00000007] w-[100%] h-[200vh]">d</div> -->
-  <!-- <div @click="" class="overlay bg-[#00000064] absolute w-[100%] h-[100vh] z-0 "></div> -->
-  <p class="md:hidden">Not Available On DESKTOP For Now</p>
+ 
+  <!-- <p class="md:hidden">Not Available On DESKTOP For Now</p> -->
  <main class="  flex flex-col overflow-x-hidden  ">
   <Nav :class="{scroll:isScrolled}"   
    class="px-[25px] z-20 md:hidden" />
