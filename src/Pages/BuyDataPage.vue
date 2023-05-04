@@ -14,7 +14,7 @@
         :open="openNav"
       />
 
-      <div class="submain flex flex-col w-[100%] px-[20px]">
+      <div class="submain flex flex-col w-[100%] px-[5px]">
         <div
           class="head rounded-tr-[20px] rounded-tl-[20px] filter  relative h-[6vh] shadow-lg pr-[20px]"
         >
