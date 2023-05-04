@@ -1,12 +1,12 @@
 <template>
-  <h1 class="text-center text-2xl font-medium mb-4 mt-16">What Our <span>Clients</span> Are Saying</h1>
-  <div class="carousel relative">
-    <div class="slider absolute inset-0 flex " :style="{ transform: `translateX(-${slide}px)` }">
+  <h1 class="mt-16 mb-4 text-2xl font-medium text-center">What Our <span>Clients</span> Are Saying</h1>
+  <div class="relative carousel">
+    <div class="absolute inset-0 flex slider " :style="{ transform: `translateX(-${slide}px)` }">
       <div class="slide flex-shrink-0 my-1 mr-[5px] bg-[#eee] rounded-xl shadow xs:w-[320px] sm:w-[390px] w-[395px]" v-for="(item, index) in items" :key="index">
        <div class="flex gap-1">
-         <!-- <img :src="item.image" alt="image"> -->
-         <img src="../assets/images/agent.png" class=" sm:w-28 sm:h-28 xs:w-20 xs:h-20 w-32 h-32" alt="">
-       <div class="flex flex-col text-left justify-center">
+         <img :src="item.image"  class="border border-white rounded-full w-28 h-28 sm:w-28 sm:h-28 xs:w-20 xs:h-20" alt="customer image">
+         <!-- <img src="../assets/images/agent.png" class="w-32 h-32 sm:w-28 sm:h-28 xs:w-20 xs:h-20" alt=""> -->
+       <div class="flex flex-col justify-center text-left">
         <h3 class="text-lg font-medium capitalize">{{ item.name }}</h3>
         <h4 class="text-sm font-medium capitalize opacity-60">{{ item.about }}</h4>
         <div class="flex gap-1">
@@ -20,7 +20,7 @@
       
     </div>
     <p class="text-2xl">
-      <sub class=" sm:text-xl xs:text-lg text-2xl text-yellow-700 font-cursive">" </sub>{{item.comment}}<sub class="text-2xl text-yellow-700 font-cursive "> "</sub>
+      <sub class="text-2xl text-yellow-700 sm:text-xl xs:text-lg font-cursive">" </sub>{{item.comment}}<sub class="text-2xl text-yellow-700 font-cursive "> "</sub>
     </p>
     </div>
   </div>
@@ -32,74 +32,74 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const items = ref([
   {
-    name:'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    name:'charles johnson',
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211052/IMG_20210606_142505_781-removebg-preview_c16zvz.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211040/20230108_160330-removebg-preview_a5uqyp.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211029/IMG_20230402_134034_488-removebg-preview_1_rerqkk.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683210269/sd_lrzhde.jpg",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683209386/IMG_20200105_122206-removebg-preview_ehkj24.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212072/IMG_20200302_072201_2_upalfk.jpg",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211327/IMG-20230423-WA0005_1_dugsgw.jpg",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211937/IMG_20220102_121015_511_tqlxw5.jpg",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212223/Screenshot_20211106-221110_xwyqa1.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212805/Screenshot_20220115-220607_iixayt_jtxzym.jpg",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212735/Screenshot_20210722-095632_z9eoti.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   },
   {
     name: 'ajanaku johnson',
-    image: "../assets/images/agent.png",
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212561/Screenshot_20211217-231838_wleo0m.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
     about:'frontend developer'
   }
