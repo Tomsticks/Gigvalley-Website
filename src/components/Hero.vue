@@ -39,7 +39,7 @@ function forNow(){
 }
 
 
-const typewriterdiv = document.querySelector('.type');
+// const typewriterdiv = document.querySelector('.type');
 // var typing= new Typed(typewriterdiv, {
 //   // add 
 //   strings: ['',  'DATA', 'VTU', 'SME'],
