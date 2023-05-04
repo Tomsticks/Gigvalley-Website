@@ -32,76 +32,76 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const items = ref([
   {
-    name:'charles johnson',
+    name:'charles Johnson',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211052/IMG_20210606_142505_781-removebg-preview_c16zvz.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'We are so happy with gigvalley. Not only did they provide us with a service we can count on, they reduce cost.',
+    about:'Artist'
   },
   {
-    name: 'ajanaku johnson',
-    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211040/20230108_160330-removebg-preview_a5uqyp.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    name: 'Aduroja M.O',
+    image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683213853/IMG_20210701_081246_436_c3kwyu.jpg",
+    comment:'Gigvalley data is plans are cheap, they deliver ASAP. They a simply amazing.',
+    about:'Teacher'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Rabiu Emmanuel',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211029/IMG_20230402_134034_488-removebg-preview_1_rerqkk.png",
     comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    about:'Building Contractor'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Olanrewaju Olayinka',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683210269/sd_lrzhde.jpg",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'Getting in touch with my Customers and  families has been easy, they are reliable.',
+    about:' Cadiothorasic Nurse'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Paul Busuyi',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683209386/IMG_20200105_122206-removebg-preview_ehkj24.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'This is super efficient and helpful, I can trust them.',
+    about:'Engineer'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Miss Bunmilola',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212072/IMG_20200302_072201_2_upalfk.jpg",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'My fear of losing money when funding my wallet is gone, they are well optimized.',
+    about:'Student'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Akinwunmi Funke',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211327/IMG-20230423-WA0005_1_dugsgw.jpg",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'When it comes to delivering Swift data, I Subcribe to Gigvalley!',
+    about:'Banker'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Olabode Paul',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683211937/IMG_20220102_121015_511_tqlxw5.jpg",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'They are available 24/7/365 on their Customer support.',
+    about:'Mathematician'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Ojo Olalekan',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212223/Screenshot_20211106-221110_xwyqa1.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'Our team scaled up with gigvalley, they will take your online presence to the next level.',
+    about:'CEO Sammy Computers'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Rosemary',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212805/Screenshot_20220115-220607_iixayt_jtxzym.jpg",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'They are really good at focussing on what the Customers want.',
+    about:'Ex-corper'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'O.J Olutayo',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212735/Screenshot_20210722-095632_z9eoti.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'Gigvalley Platform is 100% transparent amnd committed to outstanding customer service',
+    about:'Businessman'
   },
   {
-    name: 'ajanaku johnson',
+    name: 'Vincent Fakiyesi ',
     image: "https://res.cloudinary.com/dvqmqfmqw/image/upload/v1683212561/Screenshot_20211217-231838_wleo0m.png",
-    comment:'5 stars gigvalley has become our go-to exhibition partner, they save me hassle and stress',
-    about:'frontend developer'
+    comment:'They do not manipulate or unduly influential when customers is trying to purchase a product',
+    about:'Engineer'
   }
 ]);
 
