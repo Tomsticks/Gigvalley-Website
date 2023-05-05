@@ -1,6 +1,7 @@
 <template>
  
-  <!-- <p class="md:hidden">Not Available On DESKTOP For Now</p> -->
+ <div class="screen">
+   <!-- <p class="md:hidden">Not Available On DESKTOP For Now</p> -->
  <main class="  flex flex-col overflow-x-hidden  ">
   <Nav :class="{scroll:isScrolled}"   
    class="px-[25px] z-20 md:hidden" />
@@ -14,6 +15,7 @@
 
  </main>
  <Footer/>
+ </div>
 </template>
 
 <script setup>
@@ -44,6 +46,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+   
 .scroll{
   position: fixed;
   width: 100%;
