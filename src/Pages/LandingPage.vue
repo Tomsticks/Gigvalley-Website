@@ -4,7 +4,7 @@
  <main class="  flex flex-col overflow-x-hidden  ">
   <Nav :class="{scroll:isScrolled}"   
    class="px-[25px] z-20 md:hidden" />
-  <MobileNav :class="{class:isScrolled}" class="z-[20]"/>
+  <MobileNav :class="{scroll:isScrolled}" class="z-[20]"/>
   <Hero class=" hide px-[25px]"/>
 <Testimoies class="px-[25px]"/>
 <About class="px-[25px]"/>
