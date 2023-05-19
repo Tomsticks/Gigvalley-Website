@@ -21,7 +21,7 @@
           <Head :pass="openNav" />
         </div>
         <body class="h-[100vh] overflow-y-scroll overflow-x-hidden">
-          <!-- <Body /> -->
+          <ProfilePart/>
         </body>
       </div>
     </main>
@@ -33,6 +33,7 @@ import Head from "@/components/Home/DashHead.vue";
 import Nav from "@/components/Home/DashNav.vue";
 // import Body from "@/components/Home/DashboardBody.vue";
 import { ref } from "vue";
+import ProfilePart from "../components/ProfilePart.vue";
 const toggle = ref(false);
 const isclose = ref(false);
 
