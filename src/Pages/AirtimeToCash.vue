@@ -14,14 +14,14 @@
         :open="openNav"
       />
 
-      <div class="submain flex flex-col w-[100%] px-[20px]">
+      <div class="submain flex flex-col w-[100%]">
         <div
           class="head rounded-tr-[20px] rounded-tl-[20px] filter w-[100%] relative h-[6vh] shadow-lg pr-[20px]"
         >
           <Head :pass="openNav" />
         </div>
         <body class="h-[100vh] overflow-y-scroll overflow-x-hidden">
-          <!-- <Body /> -->
+     <AirtimeToCash/>
         </body>
       </div>
     </main>
@@ -32,6 +32,7 @@
 import Head from "@/components/Home/DashHead.vue";
 import Nav from "@/components/Home/DashNav.vue";
 // import Body from "@/components/Home/DashboardBody.vue";
+import AirtimeToCash from '@/components/Home/AirtimeCash.vue'
 import { ref } from "vue";
 const toggle = ref(false);
 const isclose = ref(false);

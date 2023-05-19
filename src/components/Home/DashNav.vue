@@ -69,7 +69,7 @@
         <div v-if="toggleAccounts" class="accountsOption bg-primary px-[20px] py-[30px] flex flex-col gap-[20px] rounded-xl">
           <router-link class="flex text-[white] border-none" active-class="active" to="/">Change Pin</router-link>
 
-          <router-link class="flex text-[white] border-none" active-class="active" to="/">Tanscation History</router-link>
+          <router-link class="flex text-[white] border-none" active-class="active" to="/">Transcation History</router-link>
           <router-link class="flex text-[white] border-none" active-class="active" to="/"> LogOut</router-link>
         </div>
 

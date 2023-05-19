@@ -2,7 +2,7 @@
  <section id="Hero">
         <div class="hero-txt1">
           <h1>
-            Low-priced <span class="type"></span> <br />
+            Low-priced <span class="type">DATA</span> <br />
             is What We give!
           </h1>
           <p class="lorem-text hero-lorem">
@@ -39,7 +39,7 @@ function forNow(){
 }
 
 
-const typewriterdiv = document.querySelector('.type');
+// const typewriterdiv = document.querySelector('.type');
 // var typing= new Typed(typewriterdiv, {
 //   // add 
 //   strings: ['',  'DATA', 'VTU', 'SME'],
@@ -53,12 +53,19 @@ const typewriterdiv = document.querySelector('.type');
 <style scoped>
 #Hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100% ;
+  margin: auto;
 }
+
+
 
 .worked-pics {
   width: 50%;
+  /* border: 2px solid; */
   padding: 10px;
-  /* border: 2px solid red;  */
 }
 .photoshop-edit {
   width: 100%;
@@ -70,7 +77,6 @@ const typewriterdiv = document.querySelector('.type');
   justify-content: flex-start;
   gap: 2em;
   width: 80%;
-  margin-top: 3em;
 }
 .buy:hover {
   cursor: pointer;
@@ -107,7 +113,10 @@ const typewriterdiv = document.querySelector('.type');
 }
 .hero-txt1 {
   width: 50%;
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
+  align-self: stretch;
 }
 .hero-txt1 h1 {
   font-weight: bolder;
@@ -129,7 +138,10 @@ const typewriterdiv = document.querySelector('.type');
 }
 @media (max-width: 520px) {
   #Hero {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
   }
   .hero-txt1 {
     width: 100%;
@@ -138,7 +150,10 @@ const typewriterdiv = document.querySelector('.type');
     width: 100%;
   }
 .hero-btn {
-    margin: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    
   }
   .hero-btn button {
     font-size: clamp(15px, 1vw, 10px);

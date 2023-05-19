@@ -1,11 +1,12 @@
 <template>
-  <!-- <div v-if="navDrop" class="overlay absolute bg-[#00000007] w-[100%] h-[200vh]">d</div> -->
-  <!-- <div @click="" class="overlay bg-[#00000064] absolute w-[100%] h-[100vh] z-0 "></div> -->
+ 
+ <div class="screen">
+   <!-- <p class="md:hidden">Not Available On DESKTOP For Now</p> -->
  <main class="  flex flex-col overflow-x-hidden  ">
   <Nav :class="{scroll:isScrolled}"   
    class="px-[25px] z-20 md:hidden" />
-  <MobileNav :class="{class:isScrolled}" class="z-[20]"/>
-  <Hero class="px-[25px]"/>
+  <MobileNav :class="{scroll:isScrolled}" class="z-[20]"/>
+  <Hero class=" hide px-[25px]"/>
 <Testimoies class="px-[25px]"/>
 <About class="px-[25px]"/>
 <Services class="px-[25px]"/>
@@ -14,6 +15,7 @@
 
  </main>
  <Footer/>
+ </div>
 </template>
 
 <script setup>
@@ -44,6 +46,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+   
 .scroll{
   position: fixed;
   width: 100%;
@@ -51,6 +54,10 @@ top:0 ;
 z-index: 10;
 background-color: white;
 margin-top: 0;
+}
+
+.hide{
+  @apply md:hidden
 }
 </style>
 

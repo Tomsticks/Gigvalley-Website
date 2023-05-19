@@ -1,6 +1,9 @@
 <template>
    
-    <RouterView/>
+   <div class="screen">
+    <RouterView />
+   </div>
+   
     <!-- <Login/> -->
    </template>
    <script setup>
@@ -9,5 +12,6 @@
 
    </script>
    
-   <style>
+   <style scoped>
+
    </style>
