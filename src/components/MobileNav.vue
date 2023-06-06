@@ -29,7 +29,7 @@
     <div
       
       :class="{show:link, out:!link}"
-      class="links  flex-col absolute  hidden top-[60px] bg-primary text-[white] w-[100%]  "
+      class="links  flex-col absolute rounded hidden top-[60px] bg-primary text-[white] w-[100%]  "
     >
       <div @click="open" class="navigator flex flex-col gap-[10px] text-[20px] uppercase font-[bolder]  ">
         <a href="#">Home</a>
