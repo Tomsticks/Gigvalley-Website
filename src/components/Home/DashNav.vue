@@ -103,10 +103,11 @@ toggleAccounts.value = !toggleAccounts.value
 
 
 </script>
+
 <style scoped>
 .active {
   background-color:#70008f;
   color:white;
-  /* border-radius: 10px; */
   padding: 10px 20px;
-}</style>
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono">
+  <form class="font-mono">
     <div class="w-[100%] bg-[#ddd]">
       <div
         class="flex items-center justify-center p-[2px] mt-[40px] mb-[20px] capitalize text-white bg-primary h-[30px] gap-[2px]"
@@ -130,16 +130,16 @@
             </div>
           </div>
 
-          <p
+          <button
             @click="submit"
             class="text-[#FFF] bg-primary rounded-[10px]w-[100%] p-[5px] text-[20px] capitalize text-center rounded-full"
           >
             purchase
-          </p>
+          </button>
         </fieldset>
       </form>
     </div>
-  </div>
+  </form>
 </template>
 
 <script setup>

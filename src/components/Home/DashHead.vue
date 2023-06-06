@@ -30,7 +30,8 @@ const toggleNav = defineProps(['pass'])
 
 const navFunction = toggleNav.pass
 const user = ref(false)
-function userDropDown(){
+function userDropDown(event){
+  event.stopPropagation()
   user.value = !user.value
 }
 

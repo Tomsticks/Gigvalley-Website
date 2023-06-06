@@ -23,11 +23,19 @@
           />
         </div>
       </section>
+
+   
+  <!-- <vue-typed-js :strings="strings">s</vue-typed-js> -->
 </template>
 
 <script setup>
 
 import {useRouter} from 'vue-router'
+import VueTypedJs from 'vue-typed-js';
+import {ref} from 'vue'
+
+// const strings = ref(['Hello', 'World']);
+
 const router = useRouter()
 
 function getStarted(){

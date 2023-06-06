@@ -66,7 +66,7 @@
             </div>
           </div>
           
-          <p class="text-[#FFF] bg-primary rounded-[10px]w-[100%] p-[5px] text-[20px] capitalize text-center rounded-full">purchase</p>
+          <button class="text-[#FFF] bg-primary w-[100%] p-[5px] text-[20px] capitalize text-center rounded-[20px] self-center">purchase</button>
         </fieldset>
       </form>
     

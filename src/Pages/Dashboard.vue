@@ -12,7 +12,7 @@
         :class="{ class: isOpen , class2:isclose}"
         class="hidde"
         :open="openNav"
-      />;
+      />
 
       <div class="submain flex flex-col w-[100%] px-[20px]">
         <div
